@@ -3,6 +3,33 @@
   
     
     <entry>
+      <title><![CDATA[MIUI_QQ耗电毒瘤关闭没用的功能节约电量]]></title>
+      <url>/Hexo1/</url>
+      <content type="html"><![CDATA[<p>手机QQ耗电毒瘤，关闭没用的功能节省电量</p>
+<a id="more"></a>
+<p><img src="/images/Hexo1/20181106094846183.png" alt=""></p>
+<ol>
+<li><p>关闭所有没用的动态</p>
+<p>  动态-&gt;右上角点更多-&gt;关闭没用的动态<br>  特别是运动要关闭，计步是非常耗电的</p>
+</li>
+<li><p>把所有不需要的接受消息的群全部屏蔽</p>
+</li>
+<li>MIUI 安全中心-&gt;电量-&gt;QQ智能省电</li>
+</ol>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> Android </tag>
+            
+            <tag> QQ </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Windows/Mac下黑苹果简易安装步骤【Intel HD Graphics 630】]]></title>
       <url>/%E9%BB%91%E8%8B%B9%E6%9E%9C/</url>
       <content type="html"><![CDATA[<p>参考资料：</p>
@@ -1165,7 +1192,7 @@ pop ax # 将栈顶的数据放入ax
     
     <entry>
       <title><![CDATA[书籍推荐]]></title>
-      <url>/books/</url>
+      <url>/books-recomm/</url>
       <content type="html"><![CDATA[<p>Allyn 的书单， 包含知识的入门和进阶。</p>
 <h1 id="Java-基础"><a href="#Java-基础" class="headerlink" title="Java 基础"></a>Java 基础</h1><ul>
 <li>《java 核心技术 卷I》<br>作为0基础编程，Java初学者读物</li>

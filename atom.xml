@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.zengyilun.com/"/>
-  <updated>2018-10-15T02:41:50.421Z</updated>
+  <updated>2018-11-06T01:53:43.751Z</updated>
   <id>http://www.zengyilun.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MIUI_QQ耗电毒瘤关闭没用的功能节约电量</title>
+    <link href="http://www.zengyilun.com/Hexo1/"/>
+    <id>http://www.zengyilun.com/Hexo1/</id>
+    <published>2018-11-06T01:42:09.000Z</published>
+    <updated>2018-11-06T01:53:43.751Z</updated>
+    
+    <content type="html"><![CDATA[<p>手机QQ耗电毒瘤，关闭没用的功能节省电量</p><a id="more"></a><p><img src="/images/Hexo1/20181106094846183.png" alt=""></p><ol><li><p>关闭所有没用的动态</p><p>  动态-&gt;右上角点更多-&gt;关闭没用的动态<br>  特别是运动要关闭，计步是非常耗电的</p></li><li><p>把所有不需要的接受消息的群全部屏蔽</p></li><li>MIUI 安全中心-&gt;电量-&gt;QQ智能省电</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;手机QQ耗电毒瘤，关闭没用的功能节省电量&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Android" scheme="http://www.zengyilun.com/tags/Android/"/>
+    
+      <category term="QQ" scheme="http://www.zengyilun.com/tags/QQ/"/>
+    
+  </entry>
   
   <entry>
     <title>Windows/Mac下黑苹果简易安装步骤【Intel HD Graphics 630】</title>
@@ -432,28 +454,6 @@
     <summary type="html">
     
       &lt;p&gt;如何使用独立应用程序(self-contained applications) 来使用Spark API， 实现一个单词计数小程序。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="spark 入门系列" scheme="http://www.zengyilun.com/categories/spark-%E5%85%A5%E9%97%A8%E7%B3%BB%E5%88%97/"/>
-    
-    
-      <category term="spark" scheme="http://www.zengyilun.com/tags/spark/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spark 快速入门教程（一） - Spark 体验</title>
-    <link href="http://www.zengyilun.com/spark-1/"/>
-    <id>http://www.zengyilun.com/spark-1/</id>
-    <published>2017-05-08T07:37:03.000Z</published>
-    <updated>2018-10-12T01:19:04.376Z</updated>
-    
-    <content type="html"><![CDATA[<p>Spark 入门教程, 下载与安装，Spark Shell 的使用。</p><a id="more"></a><h1 id="Spark-是什么"><a href="#Spark-是什么" class="headerlink" title="Spark 是什么"></a>Spark 是什么</h1><p>Spark 是一个用来实现快速而通用的<strong>集群计算平台</strong>。</p><p>相比 MapReduce 计算模型，Spark 的一个主要特点就是能够在内存中进行计算，因而更快，不过即使是必须在磁盘上进行的复杂方面，在速度方面比 MapReduce 更加高效。</p><p>Spark 所提供的接口非常丰富。除了提供基于 Python、 Java、 Scala、 R 和 SQL 的简单易用的API以及内建的丰富程序以外， Spark 还能和其他大数据工具密切配合使用。 例如，Spark 可以运行在 Hadoop 集群上，访问包括 Cassandra 在内的任意 Hadoop 数据源。</p><p>Spark 支持为各种不同的应用场景专门设计的高级组件，比如SQL和机器学习等。<br><img src="/images/spark/spark-01.png" alt=""></p><h1 id="Spark-下载与安装"><a href="#Spark-下载与安装" class="headerlink" title="Spark 下载与安装"></a>Spark 下载与安装</h1><p>Spark 现属于 apache 开源软件基金会，访问 <a href="http://spark.apache.org/downloads.html" target="_blank" rel="noopener">http://spark.apache.org/downloads.html</a> 下载。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget http://d3kbcqa49mib13.cloudfront.net/spark-2.1.1-bin-hadoop2.7.tgz</span><br><span class="line">tar -xzf spark-2.1.1-bin-hadoop2.7.tgz</span><br></pre></td></tr></table></figure><h1 id="运行-Spark-例子和-Shell"><a href="#运行-Spark-例子和-Shell" class="headerlink" title="运行 Spark 例子和 Shell"></a>运行 Spark 例子和 Shell</h1><p>切换到 Spark 目录下，运行例子显示 Pi 的10位小数。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./bin/run-example SparkPi 10</span><br></pre></td></tr></table></figure><p>运行 Spark Shell</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./bin/spark-shell</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">scala&gt; val lines = sc.textFile(<span class="string">"README.md"</span>) //读取 Spark 目录下的 README.md</span><br><span class="line">scala&gt; lines.count() //返回文档总行数</span><br><span class="line">scala&gt; lines.first() //返回文档第一行</span><br></pre></td></tr></table></figure><p>退出 Shell <code>Ctrl + D</code></p><p>变量 lines 是一个RDD，是从你的电脑上的本地文件读入的文本文件创建出来的。</p><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul><li>《Spark 快速大数据分析》</li><li><a href="http://spark.apache.org/docs/latest/" target="_blank" rel="noopener">Spark 官方文档</a></li></ul><p>下一篇，将介绍如何使用独立Java程序来操作RDD。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Spark 入门教程, 下载与安装，Spark Shell 的使用。&lt;/p&gt;
     
     </summary>
     
