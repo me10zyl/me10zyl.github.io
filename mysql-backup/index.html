@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cn,zh-Hans,en,default">
-  <head>
+  <head><meta name="generator" content="Hexo 3.8.0">
     
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-  <meta name="description" content="MySQL 数据库基于LVM快照热备份"/>
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
+  <meta name="description" content="MySQL 数据库基于LVM快照热备份">
 
-  <meta name="keywords" content="mysql," />
+
+
+
+  <meta name="keywords" content="mysql,">
 
 
 
@@ -27,11 +27,11 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.4.x" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.4.x">
 
 
 
-<link rel="canonical" href="http://www.zengyilun.com/mysql-backup/"/>
+<link rel="canonical" href="http://www.zengyilun.com/mysql-backup/">
 
 
 <meta name="description" content="MySQL 数据库的热备份 - 基于LVM快照备份。">
@@ -48,11 +48,11 @@
 <meta name="twitter:description" content="MySQL 数据库的热备份 - 基于LVM快照备份。">
 
 
-<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x" />
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x">
 
 
 
-  <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
+  <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css">
 
 
 
@@ -85,8 +85,7 @@
 
 
 
-  <script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 <!--
 <script type="text/javascript" async
@@ -259,7 +258,7 @@
         <li class="menu-search">
           <form>
             <i class="iconfont icon-search" id="open-search"></i>
-            <input type="text" class="search-input" id="search-input" />
+            <input type="text" class="search-input" id="search-input">
             <i class="iconfont icon-close" id="close-search"></i>
           </form>
         </li>
@@ -269,7 +268,7 @@
 </nav>
 
 <nav style="clear:left">
-	<a href='/'> 首页 </a> &gt <a href='http://www.zengyilun.com/mysql-backup/'>mysql-backup</a>
+	<a href="/"> 首页 </a> &gt <a href="http://www.zengyilun.com/mysql-backup/">mysql-backup</a>
 </nav>
 
       </header>
@@ -307,7 +306,7 @@
   <div class="post-toc" id="post-toc">
     <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#热备与冷备"><span class="toc-text">热备与冷备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-复制备份"><span class="toc-text">1. 复制备份</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-快照备份"><span class="toc-text">2. 快照备份</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-开始备份"><span class="toc-text">3. 开始备份</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-准备工作"><span class="toc-text">1.准备工作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-启用数据库二进制日志"><span class="toc-text">2.启用数据库二进制日志</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-更改数据库-server-id"><span class="toc-text">2.更改数据库 server-id</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-配置主从数据库"><span class="toc-text">3.配置主从数据库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-自动创建快照"><span class="toc-text">4.自动创建快照</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-小结"><span class="toc-text">4.小结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-text">参考资料</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#热备与冷备"><span class="toc-text">热备与冷备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-复制备份"><span class="toc-text">1. 复制备份</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-快照备份"><span class="toc-text">2. 快照备份</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-开始备份"><span class="toc-text">3. 开始备份</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-准备工作"><span class="toc-text">1.准备工作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-启用数据库二进制日志"><span class="toc-text">2.启用数据库二进制日志</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-更改数据库-server-id"><span class="toc-text">2.更改数据库 server-id</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-配置主从数据库"><span class="toc-text">3.配置主从数据库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-自动创建快照"><span class="toc-text">4.自动创建快照</span></a></li></ol></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#4-小结"><span class="toc-text">4.小结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-text">参考资料</span></a></li>
     </div>
   </div>
 
