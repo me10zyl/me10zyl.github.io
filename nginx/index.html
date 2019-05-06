@@ -12,7 +12,7 @@
 
 
 
-  <meta name="description" content="20190506105402">
+  <meta name="description" content="nginx rewrite 模块">
 
 
 
@@ -32,14 +32,17 @@
 <link rel="canonical" href="http://www.zengyilun.com/nginx/">
 
 
+<meta name="description" content="ngx_http_rewrite_module 使用 REPL 来改写URL，实现重定向，重新匹配跳转，改写反向代理URL功能。 重定向1234567891011121314server&amp;#123;    location / &amp;#123;        rewrite http://www.baidu.com;    &amp;#125;    location /test1 &amp;#123; #302 临">
 <meta property="og:type" content="article">
-<meta property="og:title" content="20190506105402">
+<meta property="og:title" content="nginx rewrite 模块">
 <meta property="og:url" content="http://www.zengyilun.com/nginx/index.html">
 <meta property="og:site_name" content="Rainy Mood - allyn 的日志">
+<meta property="og:description" content="ngx_http_rewrite_module 使用 REPL 来改写URL，实现重定向，重新匹配跳转，改写反向代理URL功能。 重定向1234567891011121314server&amp;#123;    location / &amp;#123;        rewrite http://www.baidu.com;    &amp;#125;    location /test1 &amp;#123; #302 临">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-05-06T02:54:02.751Z">
+<meta property="og:updated_time" content="2019-05-06T03:27:53.099Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="20190506105402">
+<meta name="twitter:title" content="nginx rewrite 模块">
+<meta name="twitter:description" content="ngx_http_rewrite_module 使用 REPL 来改写URL，实现重定向，重新匹配跳转，改写反向代理URL功能。 重定向1234567891011121314server&amp;#123;    location / &amp;#123;        rewrite http://www.baidu.com;    &amp;#125;    location /test1 &amp;#123; #302 临">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x">
@@ -88,7 +91,7 @@
 
 
 
-    <title> 20190506105402 · Rainy Mood - allyn 的日志 </title>
+    <title> nginx rewrite 模块 · Rainy Mood - allyn 的日志 </title>
   </head>
 
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -277,7 +280,7 @@
     <header class="post-header">
       <h1 class="post-title">
         
-          20190506105402
+          nginx rewrite 模块
         
       </h1>
 
@@ -291,10 +294,23 @@
 
     
     
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#重定向"><span class="toc-text">重定向</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#重新匹配跳转"><span class="toc-text">重新匹配跳转</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#改写反向代理URL"><span class="toc-text">改写反向代理URL</span></a></li></ol>
+    </div>
+  </div>
+
 
     <div class="post-content">
       
-        
+        <p>ngx_http_rewrite_module 使用 REPL 来改写URL，实现<strong>重定向</strong>，<strong>重新匹配跳转</strong>，<strong>改写反向代理URL</strong>功能。</p>
+<h4 id="重定向"><a href="#重定向" class="headerlink" title="重定向"></a>重定向</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">    location / &#123;</span><br><span class="line">        rewrite http://www.baidu.com;</span><br><span class="line">    &#125;</span><br><span class="line">    location /test1 &#123; #302 临时重定向</span><br><span class="line">        rewrite http://www.baidu.com redirect;</span><br><span class="line">    &#125;</span><br><span class="line">    location /test2 &#123; #301 永久重定向</span><br><span class="line">        rewrite http://www.baidu.com permanent;</span><br><span class="line">    &#125;</span><br><span class="line">    location /test3 &#123;</span><br><span class="line">        return 301 http://www.baidu.com;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="重新匹配跳转"><a href="#重新匹配跳转" class="headerlink" title="重新匹配跳转"></a>重新匹配跳转</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">    location / &#123;</span><br><span class="line">        proxy_pass http://www.baidu.com;</span><br><span class="line">    &#125;</span><br><span class="line">    location /test1 &#123;</span><br><span class="line">        rewrite ^/test1/(.*) /s?wd=$1;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">    location / &#123;</span><br><span class="line">        proxy_pass http://www.baidu.com;</span><br><span class="line">    &#125;</span><br><span class="line">    location /test1 &#123;</span><br><span class="line">        rewrite ^/test1/(.*) /s?wd=$1 last;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="改写反向代理URL"><a href="#改写反向代理URL" class="headerlink" title="改写反向代理URL"></a>改写反向代理URL</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">    location /test1 &#123;</span><br><span class="line">        rewrite ^/test1/(.*) /s?wd=$1 break;</span><br><span class="line">        proxy_pass http://www.baidu.com;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>P.S. proxy_pass 后面加/，意思是不会添加location的地址到反向代理URL。</p>
+
       
     </div>
 
@@ -459,7 +475,7 @@
     var disqus_config = function () {
         this.page.url = 'http://www.zengyilun.com/nginx/';
         this.page.identifier = 'nginx/';
-        this.page.title = '20190506105402';
+        this.page.title = 'nginx rewrite 模块';
     };
     (function() {
     var d = document, s = d.createElement('script');
