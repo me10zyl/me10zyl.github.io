@@ -1276,8 +1276,14 @@ public static void main(String[] args) {
 <p>线程安全的一些基本概念：</p>
 <blockquote>
 <p>线程的安全性的定义：当多个线程访问某个类时，这个类都始终表现出正确的行为，那么这个类就被认为是线程安全的。  </p>
+</blockquote>
+<blockquote>
 <p>无状态对象：既不包含任何域，也不包含任何对其他类中域的引用（也就是不共享变量）。无状态对象一定是线程安全的。</p>
+</blockquote>
+<blockquote>
 <p>原子性：不可分割。</p>
+</blockquote>
+<blockquote>
 <p>竞争（竞态）条件：由于不恰当的执行顺序导致不正确的结果。</p>
 </blockquote>
 <p>竞争条件的一些情况</p>
