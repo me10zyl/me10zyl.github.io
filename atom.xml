@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://www.zengyilun.com/"/>
+  <link href="http://www.yilnz.com/"/>
   <updated>2019-05-06T03:27:53.099Z</updated>
-  <id>http://www.zengyilun.com/</id>
+  <id>http://www.yilnz.com/</id>
   
   <author>
     <name>allyn</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>nginx rewrite 模块</title>
-    <link href="http://www.zengyilun.com/nginx/"/>
-    <id>http://www.zengyilun.com/nginx/</id>
+    <link href="http://www.yilnz.com/nginx/"/>
+    <id>http://www.yilnz.com/nginx/</id>
     <published>2019-05-06T02:54:02.000Z</published>
     <updated>2019-05-06T03:27:53.099Z</updated>
     
@@ -40,8 +40,8 @@
   
   <entry>
     <title>MIUI_QQ耗电毒瘤关闭没用的功能节约电量</title>
-    <link href="http://www.zengyilun.com/Hexo1/"/>
-    <id>http://www.zengyilun.com/Hexo1/</id>
+    <link href="http://www.yilnz.com/Hexo1/"/>
+    <id>http://www.yilnz.com/Hexo1/</id>
     <published>2018-11-06T01:42:09.000Z</published>
     <updated>2018-11-06T01:53:43.751Z</updated>
     
@@ -54,16 +54,16 @@
     </summary>
     
     
-      <category term="Android" scheme="http://www.zengyilun.com/tags/Android/"/>
+      <category term="Android" scheme="http://www.yilnz.com/tags/Android/"/>
     
-      <category term="QQ" scheme="http://www.zengyilun.com/tags/QQ/"/>
+      <category term="QQ" scheme="http://www.yilnz.com/tags/QQ/"/>
     
   </entry>
   
   <entry>
     <title>Windows/Mac下黑苹果简易安装步骤【Intel HD Graphics 630】</title>
-    <link href="http://www.zengyilun.com/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
-    <id>http://www.zengyilun.com/黑苹果/</id>
+    <link href="http://www.yilnz.com/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    <id>http://www.yilnz.com/黑苹果/</id>
     <published>2018-10-15T02:07:07.000Z</published>
     <updated>2018-10-15T02:41:50.421Z</updated>
     
@@ -81,14 +81,14 @@
     </summary>
     
     
-      <category term="hackintosh" scheme="http://www.zengyilun.com/tags/hackintosh/"/>
+      <category term="hackintosh" scheme="http://www.yilnz.com/tags/hackintosh/"/>
     
   </entry>
   
   <entry>
     <title>todo</title>
-    <link href="http://www.zengyilun.com/todo/"/>
-    <id>http://www.zengyilun.com/todo/</id>
+    <link href="http://www.yilnz.com/todo/"/>
+    <id>http://www.yilnz.com/todo/</id>
     <published>2018-10-12T01:19:04.375Z</published>
     <updated>2018-10-12T01:19:04.375Z</updated>
     
@@ -109,8 +109,8 @@
   
   <entry>
     <title>快速写日志，Hexo的专用编辑器 - HexoEditor</title>
-    <link href="http://www.zengyilun.com/HexoEditor/"/>
-    <id>http://www.zengyilun.com/HexoEditor/</id>
+    <link href="http://www.yilnz.com/HexoEditor/"/>
+    <id>http://www.yilnz.com/HexoEditor/</id>
     <published>2018-09-29T01:16:08.000Z</published>
     <updated>2018-10-12T01:19:04.379Z</updated>
     
@@ -123,24 +123,24 @@
     </summary>
     
     
-      <category term="hexo" scheme="http://www.zengyilun.com/tags/hexo/"/>
+      <category term="hexo" scheme="http://www.yilnz.com/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>jQuery选择器练习</title>
-    <link href="http://www.zengyilun.com/jQuery%E9%80%89%E6%8B%A9%E5%99%A8%E7%BB%83%E4%B9%A0/"/>
-    <id>http://www.zengyilun.com/jQuery选择器练习/</id>
+    <link href="http://www.yilnz.com/jQuery%E9%80%89%E6%8B%A9%E5%99%A8%E7%BB%83%E4%B9%A0/"/>
+    <id>http://www.yilnz.com/jQuery选择器练习/</id>
     <published>2018-09-28T05:49:36.000Z</published>
     <updated>2018-10-12T01:19:04.375Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="https://www.zengyilun.com/demos/html5demos/4/jqueryselectors/index.html">https://www.zengyilun.com/demos/html5demos/4/jqueryselectors/index.html</a></p>]]></content>
+    <content type="html"><![CDATA[<p><a href="https://www.zengyilun.com/demos/html5demos/4/jqueryselectors/index.html" target="_blank" rel="noopener">https://www.zengyilun.com/demos/html5demos/4/jqueryselectors/index.html</a></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;a href=&quot;https://www.zengyilun.com/demos/html5demos/4/jqueryselectors/index.html&quot;&gt;https://www.zengyilun.com/demos/html5demos/4/jquerysele
+        &lt;p&gt;&lt;a href=&quot;https://www.zengyilun.com/demos/html5demos/4/jqueryselectors/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.zengyilun.co
       
     
     </summary>
@@ -150,8 +150,8 @@
   
   <entry>
     <title>GitHub + Hexo + Travis 博客快速搭建指南</title>
-    <link href="http://www.zengyilun.com/hexo/"/>
-    <id>http://www.zengyilun.com/hexo/</id>
+    <link href="http://www.yilnz.com/hexo/"/>
+    <id>http://www.yilnz.com/hexo/</id>
     <published>2018-09-28T01:26:16.000Z</published>
     <updated>2018-10-12T01:19:04.379Z</updated>
     
@@ -164,14 +164,14 @@
     </summary>
     
     
-      <category term="Hexo" scheme="http://www.zengyilun.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://www.yilnz.com/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>汇编基础</title>
-    <link href="http://www.zengyilun.com/%E6%B1%87%E7%BC%96/"/>
-    <id>http://www.zengyilun.com/汇编/</id>
+    <link href="http://www.yilnz.com/%E6%B1%87%E7%BC%96/"/>
+    <id>http://www.yilnz.com/汇编/</id>
     <published>2018-07-12T01:30:46.000Z</published>
     <updated>2018-10-12T01:19:04.379Z</updated>
     
@@ -184,14 +184,14 @@
     </summary>
     
     
-      <category term="汇编" scheme="http://www.zengyilun.com/tags/%E6%B1%87%E7%BC%96/"/>
+      <category term="汇编" scheme="http://www.yilnz.com/tags/%E6%B1%87%E7%BC%96/"/>
     
   </entry>
   
   <entry>
     <title>jrebel破解配置</title>
-    <link href="http://www.zengyilun.com/jrebel%E7%A0%B4%E8%A7%A3%E9%85%8D%E7%BD%AE/"/>
-    <id>http://www.zengyilun.com/jrebel破解配置/</id>
+    <link href="http://www.yilnz.com/jrebel%E7%A0%B4%E8%A7%A3%E9%85%8D%E7%BD%AE/"/>
+    <id>http://www.yilnz.com/jrebel破解配置/</id>
     <published>2018-07-10T07:22:31.000Z</published>
     <updated>2018-10-12T01:19:04.378Z</updated>
     
@@ -204,16 +204,16 @@
     </summary>
     
     
-      <category term="intellij idea" scheme="http://www.zengyilun.com/tags/intellij-idea/"/>
+      <category term="intellij idea" scheme="http://www.yilnz.com/tags/intellij-idea/"/>
     
-      <category term="jrebel" scheme="http://www.zengyilun.com/tags/jrebel/"/>
+      <category term="jrebel" scheme="http://www.yilnz.com/tags/jrebel/"/>
     
   </entry>
   
   <entry>
     <title>Intellij Idea - 理解 artifact 并与之工作</title>
-    <link href="http://www.zengyilun.com/idea-artifact/"/>
-    <id>http://www.zengyilun.com/idea-artifact/</id>
+    <link href="http://www.yilnz.com/idea-artifact/"/>
+    <id>http://www.yilnz.com/idea-artifact/</id>
     <published>2017-11-01T07:41:43.000Z</published>
     <updated>2018-10-12T01:19:04.378Z</updated>
     
@@ -225,19 +225,19 @@
     
     </summary>
     
-      <category term="linux" scheme="http://www.zengyilun.com/categories/linux/"/>
+      <category term="linux" scheme="http://www.yilnz.com/categories/linux/"/>
     
     
-      <category term="linux" scheme="http://www.zengyilun.com/tags/linux/"/>
+      <category term="linux" scheme="http://www.yilnz.com/tags/linux/"/>
     
-      <category term="openvpn" scheme="http://www.zengyilun.com/tags/openvpn/"/>
+      <category term="openvpn" scheme="http://www.yilnz.com/tags/openvpn/"/>
     
   </entry>
   
   <entry>
     <title>Intelij Idea 使用 Tomcat 运行/调试 Web 应用 （超详细）</title>
-    <link href="http://www.zengyilun.com/idea-tomcat/"/>
-    <id>http://www.zengyilun.com/idea-tomcat/</id>
+    <link href="http://www.yilnz.com/idea-tomcat/"/>
+    <id>http://www.yilnz.com/idea-tomcat/</id>
     <published>2017-11-01T07:08:08.000Z</published>
     <updated>2018-10-12T01:19:04.378Z</updated>
     
@@ -249,19 +249,19 @@
     
     </summary>
     
-      <category term="intellij idea" scheme="http://www.zengyilun.com/categories/intellij-idea/"/>
+      <category term="intellij idea" scheme="http://www.yilnz.com/categories/intellij-idea/"/>
     
     
-      <category term="intellij idea" scheme="http://www.zengyilun.com/tags/intellij-idea/"/>
+      <category term="intellij idea" scheme="http://www.yilnz.com/tags/intellij-idea/"/>
     
-      <category term="java" scheme="http://www.zengyilun.com/tags/java/"/>
+      <category term="java" scheme="http://www.yilnz.com/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu 搭建 OpenVPN 翻墙</title>
-    <link href="http://www.zengyilun.com/openvpn/"/>
-    <id>http://www.zengyilun.com/openvpn/</id>
+    <link href="http://www.yilnz.com/openvpn/"/>
+    <id>http://www.yilnz.com/openvpn/</id>
     <published>2017-10-31T06:43:38.000Z</published>
     <updated>2018-10-12T01:19:04.378Z</updated>
     
@@ -273,19 +273,19 @@
     
     </summary>
     
-      <category term="linux" scheme="http://www.zengyilun.com/categories/linux/"/>
+      <category term="linux" scheme="http://www.yilnz.com/categories/linux/"/>
     
     
-      <category term="linux" scheme="http://www.zengyilun.com/tags/linux/"/>
+      <category term="linux" scheme="http://www.yilnz.com/tags/linux/"/>
     
-      <category term="openvpn" scheme="http://www.zengyilun.com/tags/openvpn/"/>
+      <category term="openvpn" scheme="http://www.yilnz.com/tags/openvpn/"/>
     
   </entry>
   
   <entry>
     <title>如何使用 Systemd 为 Shadowsocks 添加开机启动服务</title>
-    <link href="http://www.zengyilun.com/systemd/"/>
-    <id>http://www.zengyilun.com/systemd/</id>
+    <link href="http://www.yilnz.com/systemd/"/>
+    <id>http://www.yilnz.com/systemd/</id>
     <published>2017-10-30T10:34:01.000Z</published>
     <updated>2018-10-12T01:19:04.378Z</updated>
     
@@ -297,21 +297,21 @@
     
     </summary>
     
-      <category term="linux" scheme="http://www.zengyilun.com/categories/linux/"/>
+      <category term="linux" scheme="http://www.yilnz.com/categories/linux/"/>
     
     
-      <category term="linux" scheme="http://www.zengyilun.com/tags/linux/"/>
+      <category term="linux" scheme="http://www.yilnz.com/tags/linux/"/>
     
-      <category term="systemd" scheme="http://www.zengyilun.com/tags/systemd/"/>
+      <category term="systemd" scheme="http://www.yilnz.com/tags/systemd/"/>
     
-      <category term="shadowsocks" scheme="http://www.zengyilun.com/tags/shadowsocks/"/>
+      <category term="shadowsocks" scheme="http://www.yilnz.com/tags/shadowsocks/"/>
     
   </entry>
   
   <entry>
     <title>HTTP 协议深究</title>
-    <link href="http://www.zengyilun.com/http/"/>
-    <id>http://www.zengyilun.com/http/</id>
+    <link href="http://www.yilnz.com/http/"/>
+    <id>http://www.yilnz.com/http/</id>
     <published>2017-05-22T07:27:16.000Z</published>
     <updated>2018-10-12T01:19:04.378Z</updated>
     
@@ -324,16 +324,16 @@
     </summary>
     
     
-      <category term="network" scheme="http://www.zengyilun.com/tags/network/"/>
+      <category term="network" scheme="http://www.yilnz.com/tags/network/"/>
     
-      <category term="http" scheme="http://www.zengyilun.com/tags/http/"/>
+      <category term="http" scheme="http://www.yilnz.com/tags/http/"/>
     
   </entry>
   
   <entry>
     <title>Minecraft 制造计算机（二） - 半加器</title>
-    <link href="http://www.zengyilun.com/logic-gate-and-mc-2/"/>
-    <id>http://www.zengyilun.com/logic-gate-and-mc-2/</id>
+    <link href="http://www.yilnz.com/logic-gate-and-mc-2/"/>
+    <id>http://www.yilnz.com/logic-gate-and-mc-2/</id>
     <published>2017-05-22T05:50:14.000Z</published>
     <updated>2018-10-12T01:19:04.378Z</updated>
     
@@ -345,19 +345,19 @@
     
     </summary>
     
-      <category term="minecraft 造计算机系列" scheme="http://www.zengyilun.com/categories/minecraft-%E9%80%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E5%88%97/"/>
+      <category term="minecraft 造计算机系列" scheme="http://www.yilnz.com/categories/minecraft-%E9%80%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E5%88%97/"/>
     
     
-      <category term="logic-gates" scheme="http://www.zengyilun.com/tags/logic-gates/"/>
+      <category term="logic-gates" scheme="http://www.yilnz.com/tags/logic-gates/"/>
     
-      <category term="minecraft" scheme="http://www.zengyilun.com/tags/minecraft/"/>
+      <category term="minecraft" scheme="http://www.yilnz.com/tags/minecraft/"/>
     
   </entry>
   
   <entry>
     <title>Spark 计算文章相似度</title>
-    <link href="http://www.zengyilun.com/spark-similarity/"/>
-    <id>http://www.zengyilun.com/spark-similarity/</id>
+    <link href="http://www.yilnz.com/spark-similarity/"/>
+    <id>http://www.yilnz.com/spark-similarity/</id>
     <published>2017-05-18T06:17:01.000Z</published>
     <updated>2018-10-12T01:19:04.377Z</updated>
     
@@ -370,16 +370,16 @@
     </summary>
     
     
-      <category term="spark" scheme="http://www.zengyilun.com/tags/spark/"/>
+      <category term="spark" scheme="http://www.yilnz.com/tags/spark/"/>
     
-      <category term="machine learning" scheme="http://www.zengyilun.com/tags/machine-learning/"/>
+      <category term="machine learning" scheme="http://www.yilnz.com/tags/machine-learning/"/>
     
   </entry>
   
   <entry>
     <title>Minecraft 制造计算机（一） - 逻辑门</title>
-    <link href="http://www.zengyilun.com/logic-gate-and-mc-1/"/>
-    <id>http://www.zengyilun.com/logic-gate-and-mc-1/</id>
+    <link href="http://www.yilnz.com/logic-gate-and-mc-1/"/>
+    <id>http://www.yilnz.com/logic-gate-and-mc-1/</id>
     <published>2017-05-16T00:24:14.000Z</published>
     <updated>2018-10-12T01:19:04.377Z</updated>
     
@@ -391,19 +391,19 @@
     
     </summary>
     
-      <category term="minecraft 造计算机系列" scheme="http://www.zengyilun.com/categories/minecraft-%E9%80%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E5%88%97/"/>
+      <category term="minecraft 造计算机系列" scheme="http://www.yilnz.com/categories/minecraft-%E9%80%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E5%88%97/"/>
     
     
-      <category term="logic-gates" scheme="http://www.zengyilun.com/tags/logic-gates/"/>
+      <category term="logic-gates" scheme="http://www.yilnz.com/tags/logic-gates/"/>
     
-      <category term="minecraft" scheme="http://www.zengyilun.com/tags/minecraft/"/>
+      <category term="minecraft" scheme="http://www.yilnz.com/tags/minecraft/"/>
     
   </entry>
   
   <entry>
     <title>Spark 快速入门教程（三） - 搭建集群</title>
-    <link href="http://www.zengyilun.com/spark-3/"/>
-    <id>http://www.zengyilun.com/spark-3/</id>
+    <link href="http://www.yilnz.com/spark-3/"/>
+    <id>http://www.yilnz.com/spark-3/</id>
     <published>2017-05-10T07:55:01.000Z</published>
     <updated>2018-10-12T01:19:04.377Z</updated>
     
@@ -415,17 +415,17 @@
     
     </summary>
     
-      <category term="spark 入门系列" scheme="http://www.zengyilun.com/categories/spark-%E5%85%A5%E9%97%A8%E7%B3%BB%E5%88%97/"/>
+      <category term="spark 入门系列" scheme="http://www.yilnz.com/categories/spark-%E5%85%A5%E9%97%A8%E7%B3%BB%E5%88%97/"/>
     
     
-      <category term="spark" scheme="http://www.zengyilun.com/tags/spark/"/>
+      <category term="spark" scheme="http://www.yilnz.com/tags/spark/"/>
     
   </entry>
   
   <entry>
     <title>布尔代数与计算机</title>
-    <link href="http://www.zengyilun.com/bool/"/>
-    <id>http://www.zengyilun.com/bool/</id>
+    <link href="http://www.yilnz.com/bool/"/>
+    <id>http://www.yilnz.com/bool/</id>
     <published>2017-05-09T05:21:47.000Z</published>
     <updated>2018-10-12T01:19:04.377Z</updated>
     
@@ -438,14 +438,14 @@
     </summary>
     
     
-      <category term="math" scheme="http://www.zengyilun.com/tags/math/"/>
+      <category term="math" scheme="http://www.yilnz.com/tags/math/"/>
     
   </entry>
   
   <entry>
     <title>Spark 远程调试</title>
-    <link href="http://www.zengyilun.com/spark-debug/"/>
-    <id>http://www.zengyilun.com/spark-debug/</id>
+    <link href="http://www.yilnz.com/spark-debug/"/>
+    <id>http://www.yilnz.com/spark-debug/</id>
     <published>2017-05-09T04:00:00.000Z</published>
     <updated>2018-10-12T01:19:04.377Z</updated>
     
@@ -457,10 +457,10 @@
     
     </summary>
     
-      <category term="spark 入门系列" scheme="http://www.zengyilun.com/categories/spark-%E5%85%A5%E9%97%A8%E7%B3%BB%E5%88%97/"/>
+      <category term="spark 入门系列" scheme="http://www.yilnz.com/categories/spark-%E5%85%A5%E9%97%A8%E7%B3%BB%E5%88%97/"/>
     
     
-      <category term="spark" scheme="http://www.zengyilun.com/tags/spark/"/>
+      <category term="spark" scheme="http://www.yilnz.com/tags/spark/"/>
     
   </entry>
   
