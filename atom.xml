@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.yilnz.com/"/>
-  <updated>2019-05-07T10:12:24.537Z</updated>
+  <updated>2019-05-07T07:33:31.226Z</updated>
   <id>http://www.yilnz.com/</id>
   
   <author>
@@ -15,44 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>AAA</title>
-    <link href="http://www.yilnz.com/AAA/"/>
-    <id>http://www.yilnz.com/AAA/</id>
-    <published>2019-05-07T10:12:18.000Z</published>
-    <updated>2019-05-07T10:12:24.537Z</updated>
-    
-    <content type="html"><![CDATA[<p>haha</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;haha&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="test" scheme="http://www.yilnz.com/tags/test/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>20190507181122</title>
-    <link href="http://www.yilnz.com/20190507181122/"/>
-    <id>http://www.yilnz.com/20190507181122/</id>
-    <published>2019-05-07T10:11:22.000Z</published>
-    <updated>2019-05-07T10:11:22.913Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>lsof 命令</title>
@@ -284,9 +246,9 @@
       <category term="linux" scheme="http://www.yilnz.com/categories/linux/"/>
     
     
-      <category term="linux" scheme="http://www.yilnz.com/tags/linux/"/>
-    
       <category term="openvpn" scheme="http://www.yilnz.com/tags/openvpn/"/>
+    
+      <category term="linux" scheme="http://www.yilnz.com/tags/linux/"/>
     
   </entry>
   
@@ -332,9 +294,9 @@
       <category term="linux" scheme="http://www.yilnz.com/categories/linux/"/>
     
     
-      <category term="linux" scheme="http://www.yilnz.com/tags/linux/"/>
-    
       <category term="openvpn" scheme="http://www.yilnz.com/tags/openvpn/"/>
+    
+      <category term="linux" scheme="http://www.yilnz.com/tags/linux/"/>
     
   </entry>
   
@@ -453,6 +415,48 @@
       <category term="logic-gates" scheme="http://www.yilnz.com/tags/logic-gates/"/>
     
       <category term="minecraft" scheme="http://www.yilnz.com/tags/minecraft/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spark 快速入门教程（三） - 搭建集群</title>
+    <link href="http://www.yilnz.com/spark-3/"/>
+    <id>http://www.yilnz.com/spark-3/</id>
+    <published>2017-05-10T07:55:01.000Z</published>
+    <updated>2018-10-12T01:19:04.377Z</updated>
+    
+    <content type="html"><![CDATA[<p>如何搭建Spark集群？</p><a id="more"></a><h1 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h1><p>搭建集群前需要了解 Spark 集群的一些术语：</p><ul><li>Driver 驱动器，也就是程序入口，带main函数的那个程序。</li><li>Master 主节点，并不会参与预算，只是用作管理集群。不要和Driver混淆，Master≠Driver。节点都是指<strong>机器</strong>，Driver是指带main函数的<strong>程序</strong>。Driver可以运行在Master上，也可以运行在Worker上，还可以运行在这两者之外的远程机器上。</li><li>Worker 计算节点，Spark RDD运算时就是在计算节点上执行的。</li><li>Executor 执行器，这个是运行在 Worker 上的真正的执行程序，这是一个<strong>进程</strong>，是由 Worker 上的 spark 开启并管理的，也就是说在 Worker 的 spark 程序开启远程调试，由调试客户端进行调试时，并不能成功的调试 Executor 完成 Jobs 的过程。</li></ul><h1 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h1><p>在主节点 Master 上添加 Worker 很简单，在根目录 <code>/conf/slaves</code> 配置文件添加 Worker节点 ip 或 主机名（主机名可用ssh配置）即可，也可以把自己也添加进去。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">localhost</span><br><span class="line">192.168.2.230</span><br></pre></td></tr></table></figure><p>启动<code>/sbin/start-all</code>，集群开始运行，报错…无法连接到目标主机。</p><p>当然，直接启动另外一台电脑上的程序肯定不会成功，要能成功连接到 Worker，需要配置 ssh ，必须让 Master 能无密码连接到 Worker 才能启动 Worker 节点的 Spark。</p><ol><li>Worker <code>ssh-keygen -t rsa</code> 生成秘钥，并添加 authorized_keys, <code>cat id_rsa &gt; authorized_keys</code></li><li>将 Worker 的秘钥发送到 Master <code>scp ~/.ssh/id_rsa root@master:/.ssh/</code> </li><li>配置 ssh_config</li></ol><p>连接测试 ssh 到 Worker 后，<code>/sbin/start-all</code> 成功。</p><h1 id="关于启动-Worker-的两个脚本"><a href="#关于启动-Worker-的两个脚本" class="headerlink" title="关于启动 Worker 的两个脚本"></a>关于启动 Worker 的两个脚本</h1><p><code>/sbin/</code> 下有两个脚本 <code>start-slaves.sh</code> 和 <code>start-slave.sh</code>，他们的区别是前者启动本Master管理的所有 Worker节点（启动别人），而<code>start-slave.sh</code>需要指定一个Master，当本机作为Worker 节点并且挂了的时候，需要重新连接到Master时使用。</p><h1 id="部署模式-deploy-mode-Cluster-与-Client"><a href="#部署模式-deploy-mode-Cluster-与-Client" class="headerlink" title="部署模式(deploy mode) Cluster 与 Client"></a>部署模式(deploy mode) Cluster 与 Client</h1><p>部署模式决定了Driver是在本地运行还是在集群上运行，Client是本地运行，而Cluster是在集群上的某一个 Worker上运行，默认是Client。通过指定spark-submit的参数–deploy-mode来指定，注意，如果是cluster模式，刚好选中的Worker必须要有驱动器程序，而且工作路径 和 提交driver时所在机器的所在路径一致, 也就是说，如果你在windows上提交driver，使用 Cluster 模式， 而选中的 Worker 是 linux系统，这是肯定不能执行成功的，因为在linux执行 driver 时，使用的是windows系统的盘符。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;如何搭建Spark集群？&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="spark 入门系列" scheme="http://www.yilnz.com/categories/spark-%E5%85%A5%E9%97%A8%E7%B3%BB%E5%88%97/"/>
+    
+    
+      <category term="spark" scheme="http://www.yilnz.com/tags/spark/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>布尔代数与计算机</title>
+    <link href="http://www.yilnz.com/bool/"/>
+    <id>http://www.yilnz.com/bool/</id>
+    <published>2017-05-09T05:21:47.000Z</published>
+    <updated>2018-10-12T01:19:04.377Z</updated>
+    
+    <content type="html"><![CDATA[<p>如何使用布尔代数制造一个计算机？</p><a id="more"></a><p>在古希腊时期，有一段著名的亚里士多德三段论：</p><blockquote><p>人总是要死的。<br>  苏格拉底是人。<br>  所以，苏格拉底是要死的。</p></blockquote><p>三句话虽然看起来很直白，但是却无法用数学证明，人们总是用代数来代表数字，无法用数学表示逻辑。</p><p>直到 乔治·布尔 ——</p><p><img src="/images/bool/04.png" alt=""></p><p>他提出了一个与常规代数相似而又不相同的代数——布尔代数。其与常规代数最大的不同就是，常规代数表示的是数字，而布尔代数表示的是集（类），使代数更加抽象。</p><p>他将集的操作分为两类：</p><p>＋：两个集合的并集<br>×：两个集合的交集</p><p>其运算符合以下性质，使用 0 代表空集，使用 1 代表全集，使用 (1 － A) 代表A的补集：</p><p>交换律：A ＋ B = B ＋ A<br>结合律：(A ＋ B) ＋ C = A + (B + C)<br>    (A × B) × C = A × (B × C)<br>分配律：(A ＋ B) × C = A × C + B × C<br>    (A × B) ＋ C = (A ＋ C) × (B ＋ C)<br>全集与空集：A ＋ 0 = A<br>        A ＋ 1 = A<br>补集：    A ＋ (1 － A) = 1<br>        A × (1 － A) = 0<br>德·摩根定律：1 － (A＋B) = (1 － A) × (1 － B)<br>          1 － (A×B) = (1 － A) ＋ (1 － B)</p><p>这是最初布尔用的＋×符号，后来人们为了与传统代数运算区分开，亦可使用∪、∩、ˉ代表集合的并、交、补。</p><p>注意，和传统代数有区别的是 <code>(A × B) ＋ C = (A ＋ C) × (B ＋ C)</code> 这在传统代数中是不成立的。</p><p>于是，将人用P表示，要死的东西用M表示，苏格拉底用S表示。<br>由第一句话，人总是要死的可以推出：</p><pre><code>P × M = P</code></pre><p>为什么不是 P × M = M 呢， 因为要死的东西不只是人，还有其他动物植物。<br>由第二句话， 苏格拉底是人可以推出：</p><pre><code>S × P = S</code></pre><p>为什么不是 S × P = P ，因为不只是只有苏格拉底一个人。<br>将第一个式子 P × M = P 带入第二个式子：</p><pre><code>S × (P × M) = S</code></pre><p>根据结合律：</p><pre><code>(S × P) × M = S</code></pre><p>由于第二个式子 S × P = S ，所以</p><pre><code>S × M = S</code></pre><p>由此推断，苏格拉底和要死的东西取交集就是苏格拉底，推出第三个句话的结论：苏格拉底会死。如果 S × M = 0 说明，苏格拉底会永生，如果 S × M = M，说明只有苏格拉底要死，其他生物都不会死。</p><p>布尔代数除了能集合运算，还能进行逻辑运算，逻辑运算使用 AND、OR、NOT分别代表集合中的 交集、并集、补集。用逻辑运算的符号表示是 ∨、∧、「。</p><p>如果能只用2种状态来表示集合，就出现了逻辑演算。用 1 代表真(全集)、 0 代表假(空集)，就会出现以下的表格：</p><table><thead><tr><th style="text-align:center">∨</th><th style="text-align:center">0</th><th style="text-align:center">1</th></tr></thead><tbody><tr><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">1</td></tr><tr><td style="text-align:center">1</td><td style="text-align:center">1</td><td style="text-align:center">1</td></tr></tbody></table><table><thead><tr><th style="text-align:center">∧</th><th style="text-align:center">0</th><th style="text-align:center">1</th></tr></thead><tbody><tr><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">1</td><td style="text-align:center">0</td><td style="text-align:center">1</td></tr></tbody></table><p>假设要买一只猫，跟店员说“我想要一只绝育的公猫，白色或黄褐色的，或者一只除了白色的绝育母猫，再或者只要是黑猫就行”。</p><p>用 M 代表公猫、F 代表母猫。白色 W、黄褐色 T、黑色 B、其他颜色 O 。N 绝育、U 没有绝育。</p><p>所以用集合来表示这个逻辑为：</p><pre><code>(M × N × (W ＋ T)) ＋ (F × N × (1 一 W)) + B</code></pre><p>接下来店员将一只猫做布尔测试，看看到底这只猫符不符合我的要求，发现用集合表示并不方便。于是使用逻辑来表示：</p><pre><code>(M AND N AND (W OR T)) OR (F AND N AND NOT W)) OR B</code></pre><p>当店员拿来一直白色未绝育公猫，用 1 代表 YES, 0 代表 NO，代入上面的逻辑表达式。</p><pre><code>(1 AND 0 AND (1 OR 0 )) OR (0 AND 0 AND NOT 1)) OR 0(1 * 0 * (1 + 0)) + (0 * 0 * (1 - 1)) + 0 = 0</code></pre><p>所以这只猫并不符合。</p><p>店员每次手动测试猫是不是符合要求，为什么不适用电路来代替手工运算呢。</p><p>电路串联：</p><p><img src="/images/bool/01.png" alt=""></p><p>两个开关，1代表闭合，0代表断开，当且仅当两个开关为闭合的时候，灯才会亮。这与逻辑与是一致的。</p><p><img src="/images/bool/02.png" alt=""></p><p>电路并联：<br>仅有一个开关为闭合，或者两个开关都闭合，灯就会亮。这与逻辑或是一致的。</p><p>于是店员将测试猫的表达式转换成了电路，使用电路来测试猫是否符合要求。</p><p><img src="/images/bool/03.png" alt=""> </p><p>通过操作开关的闭合，根据灯泡的亮与不亮就能判断出这只猫是不是符合要求。</p><p>附录：</p><p>代码中的布尔运算</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">boolean</span> a = Math.random() &gt; <span class="number">0.5</span> ? <span class="keyword">true</span> : <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">boolean</span> b = Math.random() &gt; <span class="number">0.5</span> ? <span class="keyword">true</span> : <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">boolean</span> c = Math.random() &gt; <span class="number">0.5</span> ? <span class="keyword">true</span> : <span class="keyword">false</span>;</span><br><span class="line"></span><br><span class="line">        compare(a || b, b || a); <span class="comment">//交换律</span></span><br><span class="line">        compare(a || (b || c), (a || b) || c); <span class="comment">//加法结合律</span></span><br><span class="line">        compare(a &amp;&amp; (b &amp;&amp; c), (a &amp;&amp; b) &amp;&amp; c); <span class="comment">//乘法结合律</span></span><br><span class="line">        compare(a &amp;&amp; (b || c), a &amp;&amp; b || a &amp;&amp; c); <span class="comment">//分配律</span></span><br><span class="line">        compare(a || (b &amp;&amp; c), (a || b) &amp;&amp; (a || c)); <span class="comment">//分配律</span></span><br><span class="line">        compare(!(a &amp;&amp; b), !a || !b); <span class="comment">//德·摩根定律</span></span><br><span class="line">        compare(!(a || b ), !a &amp;&amp; !b);<span class="comment">//德·摩根定律</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">compare</span><span class="params">(<span class="keyword">boolean</span> left, <span class="keyword">boolean</span> right)</span></span>&#123;</span><br><span class="line">        System.out.println(left == right);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>用0和1代替布尔值</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main2</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">byte</span> a = (<span class="keyword">byte</span>) (Math.random() &gt; <span class="number">0.5</span> ? <span class="number">1</span> : <span class="number">0</span>);</span><br><span class="line">        <span class="keyword">byte</span> b = (<span class="keyword">byte</span>) (Math.random() &gt; <span class="number">0.5</span> ? <span class="number">1</span> : <span class="number">0</span>);</span><br><span class="line">        <span class="keyword">byte</span> c = (<span class="keyword">byte</span>) (Math.random() &gt; <span class="number">0.5</span> ? <span class="number">1</span> : <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">        compare(a | b, b | a);<span class="comment">//交换律</span></span><br><span class="line">        compare((a | b) | c, a | (b | c));<span class="comment">//加法结合律</span></span><br><span class="line">        compare((a &amp; b) &amp; c, a &amp; (b &amp; c));<span class="comment">//乘法结合律</span></span><br><span class="line">        compare(a &amp; (b | c), a &amp; b | a &amp; c);<span class="comment">//分配律</span></span><br><span class="line">        compare(a | (b &amp; c), (a | b) &amp; (a | c));<span class="comment">//分配律</span></span><br><span class="line">        compare(~(a &amp; b), ~a | ~b);<span class="comment">//德·摩根定律</span></span><br><span class="line">        compare(~(a | b ), ~a &amp; ~b);<span class="comment">//德·摩根定律</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">compare</span><span class="params">(<span class="keyword">int</span> left, <span class="keyword">int</span> right)</span></span>&#123;</span><br><span class="line">        System.out.println(left == right);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;如何使用布尔代数制造一个计算机？&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="math" scheme="http://www.yilnz.com/tags/math/"/>
     
   </entry>
   
