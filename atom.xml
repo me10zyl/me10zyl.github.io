@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.yilnz.com/"/>
-  <updated>2019-05-08T08:07:14.417Z</updated>
+  <updated>2019-05-08T08:31:05.443Z</updated>
   <id>http://www.yilnz.com/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Linux 命令收集</title>
+    <link href="http://www.yilnz.com/Linux-%E5%91%BD%E4%BB%A4%E6%94%B6%E9%9B%86/"/>
+    <id>http://www.yilnz.com/Linux-命令收集/</id>
+    <published>2019-05-08T08:27:12.000Z</published>
+    <updated>2019-05-08T08:31:05.443Z</updated>
+    
+    <content type="html"><![CDATA[<p>passwd [username] 更改用户密码<br>pwd 显示当前目录路径<br>useradd [username] 添加用户<br>ls -a 显示隐藏文件<br>touch [filename] 建立一个空文件<br>cp -r <dir1> <dir2> 递归复制命令<br>less,more [filename] 分页显示文件内容 上一页Ctrl+PgUp,下一页Ctrl+PgDown(Or Space)<br>cat 显示文件内容<br>grep <string> <filename> 在<filename>文件中查找<string> ，在文本中查询内容<br>ls | grep <string> 在列出的文件名中查找<string>,|管道 （将结果交予后面的程序处理)<br>man <command> 查询<command>的手册(使用方法)<br>find [path] -name Hello.java 查找文件<br>ls -l &gt; a.txt 结果输入到a.txt（管道定向命令）<br>ls -l &gt;&gt; a.txt 结果追加到a.txt<br>chmod 666 改变文件权限为全访问<br>cat /etc/group,/etc/passwd 查看组，用户<br>whoami 查看当前组<br>tar -zxvf ???.tar.gz -C /home/server 解压到指定目录.最简化是tar -xf (extract,file=achive必须要), v是verbose,z是gzip方式<br>./xxx &amp; 以后台方式执行xxx(不占据控制台输入)<br>fdisk -l 硬盘参数 hda,IDE硬盘,sda,SATA硬盘,xvda, Xen 虚拟主磁碟<br>df [path] 查看该路径挂载了哪个硬盘分区 df -h 查看硬盘挂载情况<br>mount mnt/cdrom 挂载光驱 mount /dev/sda1 /test/ 把sda1硬盘分区挂载到test<br>umount /boot/ 把boot下面的东西全部卸载掉<br>env 查看环境变量 (vim /etc/profile编辑环境变量),可以看当前SHELL等<br>chsh -s /bin/cash 更改shell<br>ln -s ../test/a.out ./a 在当前目录创建一个a的链接指向../test/a.out<br>history 5 查询最近使用的5个命令,!5执行历史记录编号为5的命令,!ls执行最近用ls开头的命令(神器)<br>ifconfig 同windows的ipconfig<br>ifconfig eth0 192.168.1.2 配置eth0网卡ip地址<br>ifconfig eth0 network 255.255.255.0 配置子网掩码<br>crontab -e 编辑任务调度 crontab -r 清除掉任务 contab -l 列出调度的任务<br>ps aux 列出进程列表<br>kill [pid] 杀死一进程 kill -9 [pid] 强行杀死一进程.kill -9 bash 把别人踢出去<br>top 动态监视内存,top -d 10 ，10秒更新一次，u 查看某一user<br>cal 8 2014 查看2014，8月日历<br>netstat -an 同windows netstat查看端口占用<br>unzip xxx.zip 解压某zip文件，太方便了<br>scp /x/java/workSpace/lalalaServer.zip <a href="mailto:user@121.145.161.85" target="_blank" rel="noopener">user@121.145.161.85</a>:/root/zyl/server远程传递文件<br>&amp; 或 ctrl + Z 指令后台工作,fg恢复到前台(神器)<br>jobs 查询后台程序<br>free 展示内存使用情况<br>uptime 查询开机多久了，多少用户(top,netstat也可看)<br>bin/mysqld_safe –user=root&amp; 启动mysql的时候注意要加user不然它又要报error:13错误(权限问题)<br>vim /etc/profile 修改环境变量要logout重登才能生效(巨坑)<br>netstat -an | grep 3306 查看mysql是否在工作,同ps aux | grep mysql(很乱)<br>ps aux –sort=%mem 以内存排序列出进程<br>pgrep -l mysql 列出mysql的程序名与进程id<br>find / -regex .<em>mysql 查找mysql，用正则表达式<br>apt-cache update 更新源(软件库)<br>apt-cache search xxx 查找xxx软件<br>apt-get install xxx 安装某软件<br>apt-get remove 删除某软件<br>wget <url> 通过url下载软件<br>grep -n “12” ./zyl/zyl.java /home/</url></em> 在/zyl/zyl.java，/home中查找含12的文本文件，显示行数<br>find /home -amin -10 十分钟之内读过的文件或目录(access)<br>find /home -atime -10 十小时之内读过的文件或目录<br>find /home -cmin -10 十小时之内写过的文件或目录<br>find /home -ctime +10 十小时之前写过的文件或目录<br>find /home -size +10k 查找大于10k的文件<br>dpkg -i xxx.deb 安装deb(i 是install)<br>dpkg -r xxx 卸载这个软件,但不删除配置文件<br>dpkg -P xxx 彻底清除这个软件，配置文件一起删<br>dpkg -c xxx.deb 看以下这个deb里面有啥<br>dpkg -s vsftpd 看一下安装了这个vsftpd没<br>bc 计算器<br>mount /dev/sda5 /mnt/diskd5 把D盘挂载到diskd5 (扩展分区=逻辑分区相加,主分区只能有一个，扩展分区+主分区必须&lt;=3)<br>su - steam 换成steam用户<br>cat /etc/issue 查看linux版本<br>Ctrl+Z将某进程终止<br>bg %n 把某进程扔进背景运行(由Stop变为Running)相当于&amp;<br>blkid /dev/sda5 查看/dev/sda5的UUID<br>alias mv=’mv -i’ 重命名<br>which mv 查看mv全路径<br>who 查看登陆的用户<br>echo 查看文字 比如 echo “hahah”    显示 hahah           将文字写进文件echo “hahah” &gt;&gt; haha.txt<br>du -sh <em> 查看文件夹大小<br>rsync -rv –delete </em> <a href="mailto:root@zyl.com" target="_blank" rel="noopener">root@zyl.com</a>:/root/.ssh/xxx 同步本文件夹*<br>update-rc.d 更新rc012345<br>ssh -t <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a> 验证私钥<br>sudo add-apt-repository ppa:fcitx-team/nightly 添加源<br>sudo apt-get update  更新源<br>sudo dpkg –get-selections  查看安装的包<br>dpkg -L gcc 查看GCC的路径<br>netstat -ntlp<br>vipw 等于 vi /etc/passwd<br>ntpdate cn.pool.ntp.org<br>tcpdump -i eth1 -n -S -s 0 -A ‘tcp dst port 80’ | grep -A 60 ‘/oss/callback’<br>/usr/local/redis/bin/redis-cli -p 6379 -a TJKpassword monitor &gt; 1135.log<br>awk ‘/GET/{a[$3]++}END{for(i in a)print i”\t”a[i]}’ 1135.log |sort -k2nr|more<br>awk ‘/GET|SET/{a[$4” “$5]++}END{for(i in a)print i”\t”a[i]}’ 1135.log |sort -k3nr|more<br>awk ‘/GET|SET/{a[$4” “$5]++;b[$4” “$5]+=length($6)}END{for(i in a)print i”\t”a[i]”\t”b[i]}’ 1135.log |sort -k4nr|less<br>ps -eo pid,lstart,etime,cmd | grep tj-im-ser 查看程序启动时间<br>./bin/mysqlbinlog –start-datetime=”2018-08-06 00:00:00” master-bin.00026[2-8] –base64-output=”decode-rows” –database=tj_v3_dev -v | grep tj_tjk_customer_IMweb_config -C 50 &gt; /usr/tomcat/tj-im-service/webconfig-binlog180806-5</string></string></string></filename></filename></string></dir2></dir1></p><p>/usr/local/mysql/bin/mysqlbinlog /usr/local/mysql/data/master-bin.000296</p><p>/usr/local/mysql/bin/mysqlbinlog –start-datetime=”2019-01-18 00:00:00” binlog.000201 –base64-output=”decode-rows” –database=tjk_db_v2 -v</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;passwd [username] 更改用户密码&lt;br&gt;pwd 显示当前目录路径&lt;br&gt;useradd [username] 添加用户&lt;br&gt;ls -a 显示隐藏文件&lt;br&gt;touch [filename] 建立一个空文件&lt;br&gt;cp -r &lt;dir1&gt; &lt;dir2&gt; 递归
+      
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="http://www.yilnz.com/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Wireshark 抓取Https（MAC)</title>
-    <link href="http://www.yilnz.com/Wireshark-%E6%8A%93%E5%8F%96Https/"/>
-    <id>http://www.yilnz.com/Wireshark-抓取Https/</id>
+    <link href="http://www.yilnz.com/Wireshark-%E6%8A%93%E5%8F%96Https%EF%BC%88MAC/"/>
+    <id>http://www.yilnz.com/Wireshark-抓取Https（MAC/</id>
     <published>2019-05-08T07:56:25.000Z</published>
-    <updated>2019-05-08T08:07:14.417Z</updated>
+    <updated>2019-05-08T08:27:21.440Z</updated>
     
     <content type="html"><![CDATA[<ol><li>设置环境变量 SSLKEYLOGFILE to /Users/zyl/sslkeylog/sslkeylog.log (此方法不顶用）</li><li>用参数运行Chrome:<br><code>open -a Google\ Chrome --args --ssl-key-log-file=/Users/zyl/sslkeylog/sslkeylog.log</code><a id="more"></a></li><li>设置首选项 设置 sslkeylog 位置<br><img src="/images/Wireshark-抓取Https/20190508040417468.png" alt=""></li><li>成功抓包<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ ping www.baidu.com</span><br><span class="line">PING www.a.shifen.com (180.97.33.107): 56 data bytes</span><br><span class="line">64 bytes from 180.97.33.107: icmp_seq=0 ttl=54 time=32.693 ms</span><br><span class="line">64 bytes from 180.97.33.107: icmp_seq=1 ttl=54 time=32.372 ms</span><br></pre></td></tr></table></figure></li></ol><p><img src="/images/Wireshark-抓取Https/20190508040105610.png" alt=""></p>]]></content>
     
@@ -439,28 +462,6 @@
       <category term="logic-gates" scheme="http://www.yilnz.com/tags/logic-gates/"/>
     
       <category term="minecraft" scheme="http://www.yilnz.com/tags/minecraft/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spark 快速入门教程（三） - 搭建集群</title>
-    <link href="http://www.yilnz.com/spark-3/"/>
-    <id>http://www.yilnz.com/spark-3/</id>
-    <published>2017-05-10T07:55:01.000Z</published>
-    <updated>2018-10-12T01:19:04.377Z</updated>
-    
-    <content type="html"><![CDATA[<p>如何搭建Spark集群？</p><a id="more"></a><h1 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h1><p>搭建集群前需要了解 Spark 集群的一些术语：</p><ul><li>Driver 驱动器，也就是程序入口，带main函数的那个程序。</li><li>Master 主节点，并不会参与预算，只是用作管理集群。不要和Driver混淆，Master≠Driver。节点都是指<strong>机器</strong>，Driver是指带main函数的<strong>程序</strong>。Driver可以运行在Master上，也可以运行在Worker上，还可以运行在这两者之外的远程机器上。</li><li>Worker 计算节点，Spark RDD运算时就是在计算节点上执行的。</li><li>Executor 执行器，这个是运行在 Worker 上的真正的执行程序，这是一个<strong>进程</strong>，是由 Worker 上的 spark 开启并管理的，也就是说在 Worker 的 spark 程序开启远程调试，由调试客户端进行调试时，并不能成功的调试 Executor 完成 Jobs 的过程。</li></ul><h1 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h1><p>在主节点 Master 上添加 Worker 很简单，在根目录 <code>/conf/slaves</code> 配置文件添加 Worker节点 ip 或 主机名（主机名可用ssh配置）即可，也可以把自己也添加进去。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">localhost</span><br><span class="line">192.168.2.230</span><br></pre></td></tr></table></figure><p>启动<code>/sbin/start-all</code>，集群开始运行，报错…无法连接到目标主机。</p><p>当然，直接启动另外一台电脑上的程序肯定不会成功，要能成功连接到 Worker，需要配置 ssh ，必须让 Master 能无密码连接到 Worker 才能启动 Worker 节点的 Spark。</p><ol><li>Worker <code>ssh-keygen -t rsa</code> 生成秘钥，并添加 authorized_keys, <code>cat id_rsa &gt; authorized_keys</code></li><li>将 Worker 的秘钥发送到 Master <code>scp ~/.ssh/id_rsa root@master:/.ssh/</code> </li><li>配置 ssh_config</li></ol><p>连接测试 ssh 到 Worker 后，<code>/sbin/start-all</code> 成功。</p><h1 id="关于启动-Worker-的两个脚本"><a href="#关于启动-Worker-的两个脚本" class="headerlink" title="关于启动 Worker 的两个脚本"></a>关于启动 Worker 的两个脚本</h1><p><code>/sbin/</code> 下有两个脚本 <code>start-slaves.sh</code> 和 <code>start-slave.sh</code>，他们的区别是前者启动本Master管理的所有 Worker节点（启动别人），而<code>start-slave.sh</code>需要指定一个Master，当本机作为Worker 节点并且挂了的时候，需要重新连接到Master时使用。</p><h1 id="部署模式-deploy-mode-Cluster-与-Client"><a href="#部署模式-deploy-mode-Cluster-与-Client" class="headerlink" title="部署模式(deploy mode) Cluster 与 Client"></a>部署模式(deploy mode) Cluster 与 Client</h1><p>部署模式决定了Driver是在本地运行还是在集群上运行，Client是本地运行，而Cluster是在集群上的某一个 Worker上运行，默认是Client。通过指定spark-submit的参数–deploy-mode来指定，注意，如果是cluster模式，刚好选中的Worker必须要有驱动器程序，而且工作路径 和 提交driver时所在机器的所在路径一致, 也就是说，如果你在windows上提交driver，使用 Cluster 模式， 而选中的 Worker 是 linux系统，这是肯定不能执行成功的，因为在linux执行 driver 时，使用的是windows系统的盘符。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;如何搭建Spark集群？&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="spark 入门系列" scheme="http://www.yilnz.com/categories/spark-%E5%85%A5%E9%97%A8%E7%B3%BB%E5%88%97/"/>
-    
-    
-      <category term="spark" scheme="http://www.yilnz.com/tags/spark/"/>
     
   </entry>
   
