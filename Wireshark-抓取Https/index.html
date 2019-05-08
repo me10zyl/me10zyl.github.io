@@ -12,8 +12,12 @@
 
 
 
+  <meta name="description" content="Wireshark 抓取Https（MAC)">
 
 
+
+
+  <meta name="keywords" content="https,wireshark,">
 
 
 
@@ -27,16 +31,24 @@
 
 
 
-<link rel="canonical" href="http://www.yilnz.com/archives/2017/01/">
+<link rel="canonical" href="http://www.yilnz.com/Wireshark-抓取Https/">
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Rainy Mood - allyn 的日志">
-<meta property="og:url" content="http://www.yilnz.com/archives/2017/01/index.html">
+<meta name="description" content="设置环境变量 SSLKEYLOGFILE to /Users/zyl/sslkeylog/sslkeylog.log (此方法不顶用） 用参数运行Chrome:open -a Google\ Chrome --args --ssl-key-log-file=/Users/zyl/sslkeylog/sslkeylog.log">
+<meta name="keywords" content="https,wireshark">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Wireshark 抓取Https（MAC)">
+<meta property="og:url" content="http://www.yilnz.com/Wireshark-抓取Https/index.html">
 <meta property="og:site_name" content="Rainy Mood - allyn 的日志">
+<meta property="og:description" content="设置环境变量 SSLKEYLOGFILE to /Users/zyl/sslkeylog/sslkeylog.log (此方法不顶用） 用参数运行Chrome:open -a Google\ Chrome --args --ssl-key-log-file=/Users/zyl/sslkeylog/sslkeylog.log">
 <meta property="og:locale" content="zh-cn">
+<meta property="og:image" content="http://www.yilnz.com/images/Wireshark-抓取Https/20190508040417468.png">
+<meta property="og:image" content="http://www.yilnz.com/images/Wireshark-抓取Https/20190508040105610.png">
+<meta property="og:updated_time" content="2019-05-08T08:07:14.417Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Rainy Mood - allyn 的日志">
+<meta name="twitter:title" content="Wireshark 抓取Https（MAC)">
+<meta name="twitter:description" content="设置环境变量 SSLKEYLOGFILE to /Users/zyl/sslkeylog/sslkeylog.log (此方法不顶用） 用参数运行Chrome:open -a Google\ Chrome --args --ssl-key-log-file=/Users/zyl/sslkeylog/sslkeylog.log">
+<meta name="twitter:image" content="http://www.yilnz.com/images/Wireshark-抓取Https/20190508040417468.png">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x">
@@ -76,12 +88,16 @@
 
 
 
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<!--
+<script type="text/javascript" async
+  src="/js/src/mathjax-2.7.1.js">
+</script>-->
 
-    <title>
-  
-    归档 · Rainy Mood - allyn 的日志
-  
-</title>
+
+
+    <title> Wireshark 抓取Https（MAC) · Rainy Mood - allyn 的日志 </title>
   </head>
 
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -255,7 +271,7 @@
 </nav>
 
 <nav style="clear:left">
-	<a href="/"> 首页 </a> &gt <a href="">归档</a>
+	<a href="/"> 首页 </a> &gt <a href="http://www.yilnz.com/Wireshark-抓取Https/">Wireshark-抓取Https</a>
 </nav>
 
       </header>
@@ -266,60 +282,136 @@
           <div id="content" class="content">
             
   
-  <section id="archive" class="archive">
-    
-      
-        <div class="archive-title">
-          <h2 class="archive-name"> All </h2>
-          <span class="archive-post-counter">
-            目前共计 33 篇日志
-          </span>
-        </div>
-      
-    
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          Wireshark 抓取Https（MAC)
+        
+      </h1>
 
-    
-      
+      <div class="post-meta">
+        <span class="post-time">
+          2019年5月8日
+	</span>
         
-        
-
-        
-          
-          <div class="collection-title">
-            <h2 class="archive-year">2017</h2>
+          <div class="post-tags" style="display:inline-block">
+            
+              <a href="/tags/https/">#https</a>
+            
+              <a href="/tags/wireshark/">#wireshark</a>
+            
           </div>
         
-      
-      
-      <div class="archive-post">
-        <span class="archive-post-time">
-          
-            01-16
-          
-        </span>
-        <span class="archive-post-title">
-          <a href="/mysql-backup/" class="archive-post-link">
-            MySQL 数据库基于LVM快照热备份
-          </a>
-        </span>
       </div>
-    
-  </section>
+    </header>
 
-  
-  <nav class="pagination">
     
     
+
+    <div class="post-content">
+      
+        <ol>
+<li>设置环境变量 SSLKEYLOGFILE to /Users/zyl/sslkeylog/sslkeylog.log (此方法不顶用）</li>
+<li>用参数运行Chrome:<br><code>open -a Google\ Chrome --args --ssl-key-log-file=/Users/zyl/sslkeylog/sslkeylog.log</code><a id="more"></a></li>
+<li>设置首选项 设置 sslkeylog 位置<br><img src="/images/Wireshark-抓取Https/20190508040417468.png" alt=""></li>
+<li>成功抓包<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ ping www.baidu.com</span><br><span class="line">PING www.a.shifen.com (180.97.33.107): 56 data bytes</span><br><span class="line">64 bytes from 180.97.33.107: icmp_seq=0 ttl=54 time=32.693 ms</span><br><span class="line">64 bytes from 180.97.33.107: icmp_seq=1 ttl=54 time=32.372 ms</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><img src="/images/Wireshark-抓取Https/20190508040105610.png" alt=""></p>
+
+      
+    </div>
+
+    
+      
+      
+
+  <div class="post-copyright">
+    <p class="copyright-item">
+      <span>作者: </span>
+      <span>allyn</span>
+    </p>
+    <p class="copyright-item">
+      <span>来源: </span>
+      <a href="http://www.yilnz.com">http://www.yilnz.com</a>
+    </p>
+    <p class="copyright-item">
+      <span>链接: </span>
+      <a href="http://www.yilnz.com/Wireshark-抓取Https/">http://www.yilnz.com/Wireshark-抓取Https/</a>
+    </p>
+
+    <p class="copyright-item lincese">
+      
+      本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+    </p>
+  </div>
+
+
+
+      
+      
+
+      
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style" style="height:15px;margin-top:10px">
+	<span class="jiathis_txt">分享到：</span>
+	<a class="jiathis_button_tools_1"></a>
+	<a class="jiathis_button_tools_2"></a>
+	<a class="jiathis_button_tools_3"></a>
+	<a class="jiathis_button_tools_4"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="https://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+
+    
+
+    
+      <footer class="post-footer">
+        
+          <div class="post-tags">
+            
+              <a href="/tags/https/">https</a>
+            
+              <a href="/tags/wireshark/">wireshark</a>
+            
+          </div>
+        
+        
+        
+  <nav class="post-nav">
+    
+    
+      <a class="next" href="/lsof-命令/">
+        <span class="next-text nav-default">lsof 命令</span>
+        <span class="prev-text nav-mobile">下一篇</span>
+        <i class="iconfont icon-right"></i>
+      </a>
     
   </nav>
 
+      </footer>
+    
 
-
-
+  </article>
 
 
           </div>
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>  
       </main>
@@ -393,6 +485,28 @@
     </div>
 
     
+  
+
+  
+  <script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://www.yilnz.com/Wireshark-抓取Https/';
+        this.page.identifier = 'Wireshark-抓取Https/';
+        this.page.title = 'Wireshark 抓取Https（MAC)';
+    };
+    (function() {
+    var d = document, s = d.createElement('script');
+
+    s.src = '//allyn.disqus.com/embed.js';
+
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();  
+  </script>
+
+  
+
+
 
 
     

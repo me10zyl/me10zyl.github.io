@@ -3,6 +3,25 @@
   
     
     <entry>
+      <title>Wireshark 抓取Https（MAC)</title>
+      <link href="/Wireshark-%E6%8A%93%E5%8F%96Https/"/>
+      <url>/Wireshark-%E6%8A%93%E5%8F%96Https/</url>
+      
+        <content type="html"><![CDATA[<ol><li>设置环境变量 SSLKEYLOGFILE to /Users/zyl/sslkeylog/sslkeylog.log (此方法不顶用）</li><li>用参数运行Chrome:<br><code>open -a Google\ Chrome --args --ssl-key-log-file=/Users/zyl/sslkeylog/sslkeylog.log</code><a id="more"></a></li><li>设置首选项 设置 sslkeylog 位置<br><img src="/images/Wireshark-抓取Https/20190508040417468.png" alt=""></li><li>成功抓包<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ ping www.baidu.com</span><br><span class="line">PING www.a.shifen.com (180.97.33.107): 56 data bytes</span><br><span class="line">64 bytes from 180.97.33.107: icmp_seq=0 ttl=54 time=32.693 ms</span><br><span class="line">64 bytes from 180.97.33.107: icmp_seq=1 ttl=54 time=32.372 ms</span><br></pre></td></tr></table></figure></li></ol><p><img src="/images/Wireshark-抓取Https/20190508040105610.png" alt=""></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> https </tag>
+            
+            <tag> wireshark </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>lsof 命令</title>
       <link href="/lsof-%E5%91%BD%E4%BB%A4/"/>
       <url>/lsof-%E5%91%BD%E4%BB%A4/</url>
