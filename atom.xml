@@ -58,10 +58,10 @@
   
   <entry>
     <title>MIUI_QQ耗电毒瘤关闭没用的功能节约电量</title>
-    <link href="http://www.yilnz.com/Hexo1/"/>
-    <id>http://www.yilnz.com/Hexo1/</id>
+    <link href="http://www.yilnz.com/MIUI-QQ%E8%80%97%E7%94%B5%E6%AF%92%E7%98%A4%E5%85%B3%E9%97%AD%E6%B2%A1%E7%94%A8%E7%9A%84%E5%8A%9F%E8%83%BD%E8%8A%82%E7%BA%A6%E7%94%B5%E9%87%8F/"/>
+    <id>http://www.yilnz.com/MIUI-QQ耗电毒瘤关闭没用的功能节约电量/</id>
     <published>2018-11-06T01:42:09.000Z</published>
-    <updated>2018-11-06T01:53:43.751Z</updated>
+    <updated>2019-05-07T10:16:51.717Z</updated>
     
     <content type="html"><![CDATA[<p>手机QQ耗电毒瘤，关闭没用的功能节省电量</p><a id="more"></a><p><img src="/images/Hexo1/20181106094846183.png" alt=""></p><ol><li><p>关闭所有没用的动态</p><p>  动态-&gt;右上角点更多-&gt;关闭没用的动态<br>  特别是运动要关闭，计步是非常耗电的</p></li><li><p>把所有不需要的接受消息的群全部屏蔽</p></li><li>MIUI 安全中心-&gt;电量-&gt;QQ智能省电</li></ol>]]></content>
     
@@ -168,10 +168,10 @@
   
   <entry>
     <title>GitHub + Hexo + Travis 博客快速搭建指南</title>
-    <link href="http://www.yilnz.com/hexo/"/>
-    <id>http://www.yilnz.com/hexo/</id>
+    <link href="http://www.yilnz.com/GitHub-Hexo-Travis-%E5%8D%9A%E5%AE%A2%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/"/>
+    <id>http://www.yilnz.com/GitHub-Hexo-Travis-博客快速搭建指南/</id>
     <published>2018-09-28T01:26:16.000Z</published>
-    <updated>2018-10-12T01:19:04.379Z</updated>
+    <updated>2019-05-07T10:17:16.409Z</updated>
     
     <content type="html"><![CDATA[<p>1.注册一个Github账号<br>2.创建一个名为 <code>&lt;username&gt;.github.io</code> 的仓库，其中<code>&lt;username&gt;</code>为你的Github账号，这个仓库不能随便取名。这个仓库用于存储 Hexo 生成的静态HTML(master分支)。<br><a id="more"></a><br><img src="/images/hexo/20180928094051867.png" alt=""><br>3.创建一个名为 <code>blog</code> 的仓库，这个仓库也能叫其他名称，用于存储 Hexo 博客源文件。<br>4.安装 Hexo，前提是你已经安装了必备程序Nodejs</p><pre><code>npm install -g hexo-cli</code></pre><blockquote><p>注： 安装 Node.js 的最佳方式是使用 nvm。<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl https://raw.github.com/creationix/nvm/v0.33.11/install.sh | sh</span><br><span class="line">nvm install stable</span><br></pre></td></tr></table></figure></p></blockquote><p>5.找到一个文件夹 blog/，执行Hexo 博客创建命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure></p><p>6.在 blog/ 中添加 <code>gulpfile.js</code><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> exec = <span class="built_in">require</span>(<span class="string">'child_process'</span>).exec;</span><br><span class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>);</span><br><span class="line">gulp.task(<span class="string">'hexo'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">cb</span>)</span>&#123;</span><br><span class="line">  exec(<span class="string">'hexo clean &amp;&amp; hexo g'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</span><br><span class="line"><span class="keyword">if</span>(err) <span class="keyword">return</span> cb(err);</span><br><span class="line">cb();</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">'default'</span>,[<span class="string">'hexo'</span>]);</span><br></pre></td></tr></table></figure></p><p>7.在 blog/ 中添加 <code>.travis.yml</code>，按需修改<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">language:</span> <span class="string">node_js</span></span><br><span class="line"></span><br><span class="line"><span class="attr">env:</span></span><br><span class="line"><span class="attr">  global:</span></span><br><span class="line"><span class="attr">      - GH_PAGES_REPO:</span> <span class="string">me10zyl/me10zyl.github.io</span></span><br><span class="line"></span><br><span class="line"><span class="attr">node_js:</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">"node"</span></span><br><span class="line"></span><br><span class="line"><span class="attr">before_install:</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">rm</span> <span class="bullet">-rf</span> <span class="string">node_modules/</span></span><br><span class="line"></span><br><span class="line"><span class="attr">install:</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">npm</span> <span class="string">install</span></span><br><span class="line"></span><br><span class="line"><span class="attr">before_script:</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">npm</span> <span class="string">install</span> <span class="string">gulp</span></span><br><span class="line"></span><br><span class="line"><span class="attr">script:</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">gulp</span></span><br><span class="line"></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  name:</span> <span class="string">me10zyl</span></span><br><span class="line"><span class="attr">  email:</span> <span class="string">me10zyl@qq.com</span></span><br><span class="line"><span class="attr">  provider:</span> <span class="string">pages</span></span><br><span class="line"><span class="attr">  skip_cleanup:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  github_token:</span> <span class="string">$GH_TOKEN</span> <span class="comment"># Set in travis-ci.org dashboard</span></span><br><span class="line"><span class="attr">  target_branch:</span> <span class="string">master</span></span><br><span class="line"><span class="attr">  local_dir:</span> <span class="string">dist</span></span><br><span class="line"><span class="attr">  fqdn:</span> <span class="string">www.zengyilun.com</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">$GH_PAGES_REPO</span></span><br><span class="line"><span class="attr">  on:</span></span><br><span class="line"><span class="attr">    branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure></p><p>7.登陆 <a href="http://travis-ci.org" target="_blank" rel="noopener">travis-ci.org</a>，登陆你的Github账号<br>8.GitHub生成 Travis Access Token<br><img src="/images/hexo/20180928113319644.png" alt="1"></p><p><img src="/images/hexo/20180928113400040.png" alt="2"><br>9.在 Travis 仓库配置 $GH_TOKEN 环境变量，拷贝刚才生成的Access Token<br><img src="/images/hexo/20180928113446154.png" alt="3"><br>10.提交代码，等待1分钟，成功访问你的博客： <a href="http://me10zyl.github.io" target="_blank" rel="noopener">http://me10zyl.github.io</a></p>]]></content>
     
@@ -246,9 +246,9 @@
       <category term="linux" scheme="http://www.yilnz.com/categories/linux/"/>
     
     
-      <category term="openvpn" scheme="http://www.yilnz.com/tags/openvpn/"/>
-    
       <category term="linux" scheme="http://www.yilnz.com/tags/linux/"/>
+    
+      <category term="openvpn" scheme="http://www.yilnz.com/tags/openvpn/"/>
     
   </entry>
   
@@ -294,9 +294,9 @@
       <category term="linux" scheme="http://www.yilnz.com/categories/linux/"/>
     
     
-      <category term="openvpn" scheme="http://www.yilnz.com/tags/openvpn/"/>
-    
       <category term="linux" scheme="http://www.yilnz.com/tags/linux/"/>
+    
+      <category term="openvpn" scheme="http://www.yilnz.com/tags/openvpn/"/>
     
   </entry>
   
