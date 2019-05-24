@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.yilnz.com/"/>
-  <updated>2019-05-22T07:41:06.658Z</updated>
+  <updated>2019-05-24T02:58:43.357Z</updated>
   <id>http://www.yilnz.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MacOSX APP 清单</title>
+    <link href="http://www.yilnz.com/MacOSX-APP-%E6%B8%85%E5%8D%95/"/>
+    <id>http://www.yilnz.com/MacOSX-APP-清单/</id>
+    <published>2019-05-24T01:52:25.000Z</published>
+    <updated>2019-05-24T02:58:43.357Z</updated>
+    
+    <content type="html"><![CDATA[<p>现在正在用的APP清单：<br>更新日期:</p><date>2019年 5月24日 星期五 10时58分43秒 CST</date><list><br>+ AirServer<br>+ Alfred 3<br>+ Aliwangwang<br>+ App Store<br>+ Automator<br>+ BaiduNetdisk_mac<br>+ Be Focused<br>+ Beyond Compare<br>+ Calculator<br>+ Calendar<br>+ Chess<br>+ CleanMyMac 3<br>+ Contacts<br>+ DVD Player<br>+ Dash<br>+ Dashboard<br>+ DataGrip<br>+ Dictionary<br>+ FWMSO2016VL<br>+ FaceTime<br>+ Flux<br>+ Folx<br>+ Font Book<br>+ Go2Shell<br>+ GoodSync<br>+ Google Chrome<br>+ GsExplorer<br>+ HexoEditor<br>+ Image Capture<br>+ IntelliJ IDEA<br>+ JD-GUI<br>+ KeePassXC<br>+ Kext Utility<br>+ Kext Wizard<br>+ LICEcap<br>+ Launchpad<br>+ Lepton<br>+ Listen1<br>+ Mail<br>+ Maipo<br>+ Maps<br>+ Messages<br>+ Microsoft Excel<br>+ Microsoft Remote Desktop<br>+ Microsoft Word<br>+ Mission Control<br>+ Mob<br>+ Moom<br>+ MySQLWorkbench<br>+ Navicat Premium<br>+ NeteaseMusic<br>+ Noizio<br>+ Notes<br>+ Nutstore<br>+ OmniGraffle<br>+ OneDrive<br>+ OpenBoard<br>+ OpenWebMonitor3<br>+ Paste<br>+ Pennywise<br>+ Photo Booth<br>+ Photos<br>+ Pomotodo<br>+ Pomy<br>+ Preview<br>+ Proxyee<br>+ QQ<br>+ QQLive<br>+ QuickTime Player<br>+ Quiver<br>+ Reflector 3<br>+ Reminders<br>+ Safari<br>+ Script Debugger<br>+ SecureCRT<br>+ ShadowsocksX-NG-R8<br>+ Siri<br>+ Sketch<br>+ Skipper<br>+ SnippetsLab<br>+ Steam<br>+ Stickies<br>+ System Preferences<br>+ TeaCode<br>+ Telegram<br>+ TextEdit<br>+ TextExpander<br>+ Thunder<br>+ Time Machine<br>+ TweetDeck<br>+ Ukelele<br>+ VMware Fusion<br>+ Visual Studio Code<br>+ WeChat<br>+ Wireless Signal<br>+ WirelessUtility<br>+ Wireshark<br>+ Workspaces<br>+ Xcode<br>+ Yoink<br>+ YoudaoNote<br>+ iBooks<br>+ iStat Menus<br>+ iTerm<br>+ iTunes<br>+ iZip Unarchiver<br>+ irreader<br>+ labelme<br>+ oss-browser<br>+ rdm<br>+ wechatwebdevtools<br>+ 爱奇艺<br>+ 企业微信<br>+ 网易有道词典<br></list>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;现在正在用的APP清单：&lt;br&gt;更新日期:&lt;/p&gt;
+&lt;date&gt;2019年 5月24日 星期五 10时58分43秒 CST&lt;/date&gt;
+
+&lt;list&gt;&lt;br&gt;+ AirServer&lt;br&gt;+ Alfred 3&lt;br&gt;+ Aliwangwang&lt;br&gt;+ App Store
+      
+    
+    </summary>
+    
+    
+      <category term="mac" scheme="http://www.yilnz.com/tags/mac/"/>
+    
+      <category term="app" scheme="http://www.yilnz.com/tags/app/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux 命令收集</title>
@@ -435,30 +463,6 @@
       <category term="spark" scheme="http://www.yilnz.com/tags/spark/"/>
     
       <category term="machine learning" scheme="http://www.yilnz.com/tags/machine-learning/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Minecraft 制造计算机（一） - 逻辑门</title>
-    <link href="http://www.yilnz.com/logic-gate-and-mc-1/"/>
-    <id>http://www.yilnz.com/logic-gate-and-mc-1/</id>
-    <published>2017-05-16T00:24:14.000Z</published>
-    <updated>2018-10-12T01:19:04.377Z</updated>
-    
-    <content type="html"><![CDATA[<p>如何在 Minecraft 中制造逻辑门？</p><a id="more"></a><h2 id="现实世界中的逻辑门"><a href="#现实世界中的逻辑门" class="headerlink" title="现实世界中的逻辑门"></a>现实世界中的逻辑门</h2><p>上一篇 <a href="/bool">布尔代数与计算机</a> 中介绍了如何使用电路来表示布尔逻辑运算，使用<br>串联来表示与运算（交集），使用并联来表示或运算（并集），其实它们都有一个专门的名字：与门、或门。</p><p>与门：<br><img src="/images/bool/01.png" alt=""></p><p>或门：<br><img src="/images/bool/02.png" alt=""></p><p>当输入为0，输出为其取反即0时，这种逻辑电路称为反向器。</p><h2 id="Minecraft-红石电路基本元件"><a href="#Minecraft-红石电路基本元件" class="headerlink" title="Minecraft 红石电路基本元件"></a>Minecraft 红石电路基本元件</h2><p>因此，通过串联，并联，并通过电路是否通电来表示数学中的逻辑运算。Minecraft 中红石电路可以实现基本的逻辑门，从而可以制造出加法器、减法器、锁存器等等。</p><p>Minecraft 中关于红石电路和逻辑门的信息（只讨论使用基本的红石电路，不包括光敏传感器等）；</p><ul><li>红石电源有好几种：拉杆（开关）、红石火把</li><li>开关常用于逻辑门，因为他们易于制作和使用</li><li>当红石火把有供电，他们反而会熄灭，并停止提供电源(<strong>重要！</strong>)</li></ul><h2 id="关键图"><a href="#关键图" class="headerlink" title="关键图"></a>关键图</h2><p><img src="/images/mc/MCGatesKey.png" alt=""><br>从左至右：</p><ol><li>空气（空）</li><li>开关（电源）</li><li>方块（通用）</li><li>红石火把（方块侧）</li><li>红石火把（地上）</li><li>红石火把（方块上）</li><li>红石（地上）</li><li>红石（方块上）</li><li>红石（输出）</li></ol><h2 id="逻辑门的制作"><a href="#逻辑门的制作" class="headerlink" title="逻辑门的制作"></a>逻辑门的制作</h2><h2 id="反向器"><a href="#反向器" class="headerlink" title="反向器"></a>反向器</h2><p>是一个电源与输出状态相反的逻辑元件。当电源开着，则输出会关掉，反之亦然。</p><table><thead><tr><th>电源</th><th style="text-align:center">输出</th></tr></thead><tbody><tr><td>0</td><td style="text-align:center">1</td></tr><tr><td>1</td><td style="text-align:center">0</td></tr></tbody></table><p><img src="/images/mc/NOTgate.png" alt=""></p><p>游戏中实际表示为：</p><p><img src="/images/mc/01.png" alt=""></p><h2 id="或门"><a href="#或门" class="headerlink" title="或门"></a>或门</h2><table><thead><tr><th>电源</th><th style="text-align:center">0</th><th style="text-align:center">1</th></tr></thead><tbody><tr><td>0</td><td style="text-align:center">0</td><td style="text-align:center">1</td></tr><tr><td>1</td><td style="text-align:center">1</td><td style="text-align:center">1</td></tr></tbody></table><p><img src="/images/mc/ORgate.png" alt=""></p><p>游戏中实际表示为：</p><p><img src="/images/mc/02.png" alt=""></p><h2 id="与门"><a href="#与门" class="headerlink" title="与门"></a>与门</h2><p>与门稍微复杂些，这与MC中开关即电源有关系。</p><table><thead><tr><th>电源</th><th style="text-align:center">0</th><th style="text-align:center">1</th></tr></thead><tbody><tr><td>0</td><td style="text-align:center">0</td><td style="text-align:center">0</td></tr><tr><td>1</td><td style="text-align:center">0</td><td style="text-align:center">1</td></tr></tbody></table><p><strong>错误的表示方法</strong>， 因为开关就是一个电源！ 这样的话只要开启后一个开关灯就会亮了：</p><p><img src="/images/mc/03.png" alt=""></p><p><strong>正确的表示方法</strong>:</p><p><img src="/images/mc/ANDgate.png" alt=""></p><p><img src="/images/mc/08.png" alt=""></p><p>既然不能直接构造与门，这里使用了2个反向器与一个或门再加一个反向器，根据德·摩根定律：</p><p>$$ A \land B = \neg ( \neg (A \land B)) = \neg ( \neg A \lor \neg B) $$ </p><p>即与门可以用反向器和或门表示。</p><h2 id="或非门"><a href="#或非门" class="headerlink" title="或非门"></a>或非门</h2><p>或非门即或门取反。</p><table><thead><tr><th>电源</th><th style="text-align:center">0</th><th style="text-align:center">1</th></tr></thead><tbody><tr><td>0</td><td style="text-align:center">1</td><td style="text-align:center">0</td></tr><tr><td>1</td><td style="text-align:center">0</td><td style="text-align:center">0</td></tr></tbody></table><p><img src="/images/mc/NORgate.png" alt=""></p><p><img src="/images/mc/06.png" alt=""></p><h2 id="与非门"><a href="#与非门" class="headerlink" title="与非门"></a>与非门</h2><p>与非门即与门取反。</p><table><thead><tr><th>电源</th><th style="text-align:center">0</th><th style="text-align:center">1</th></tr></thead><tbody><tr><td>0</td><td style="text-align:center">1</td><td style="text-align:center">1</td></tr><tr><td>1</td><td style="text-align:center">1</td><td style="text-align:center">0</td></tr></tbody></table><p><img src="/images/mc/NANDgate.png" alt=""></p><p><img src="/images/mc/07.png" alt=""></p><h2 id="异或门"><a href="#异或门" class="headerlink" title="异或门"></a>异或门</h2><p>相同即为0，不同即为1。异或门由 或门、与非门、与门构成，或门与与非门的输出作为与门的输入。</p><table><thead><tr><th>电源</th><th style="text-align:center">0</th><th style="text-align:center">1</th></tr></thead><tbody><tr><td>0</td><td style="text-align:center">0</td><td style="text-align:center">1</td></tr><tr><td>1</td><td style="text-align:center">1</td><td style="text-align:center">0</td></tr></tbody></table><p><img src="/images/mc/04.png" alt=""></p><p><img src="/images/mc/XORgate.png" alt=""></p><h2 id="同或门"><a href="#同或门" class="headerlink" title="同或门"></a>同或门</h2><p>相同即为1，不同即为0，即异或门取反。只需要在异或门后面取反就行了。</p><table><thead><tr><th>电源</th><th style="text-align:center">0</th><th style="text-align:center">1</th></tr></thead><tbody><tr><td>0</td><td style="text-align:center">1</td><td style="text-align:center">0</td></tr><tr><td>1</td><td style="text-align:center">0</td><td style="text-align:center">1</td></tr></tbody></table><p><img src="/images/mc/XNORgate.png" alt=""></p><p>下面将使用这些逻辑门做一个半加器 <a href="/logic-gate-and-mc-2/" title="Minecraft 制造计算机（二） - 半加器">Minecraft 制造计算机（二） - 半加器</a> 吧。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;如何在 Minecraft 中制造逻辑门？&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="minecraft 造计算机系列" scheme="http://www.yilnz.com/categories/minecraft-%E9%80%A0%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E5%88%97/"/>
-    
-    
-      <category term="logic-gates" scheme="http://www.yilnz.com/tags/logic-gates/"/>
-    
-      <category term="minecraft" scheme="http://www.yilnz.com/tags/minecraft/"/>
     
   </entry>
   
