@@ -34,19 +34,19 @@
 <link rel="canonical" href="http://www.yilnz.com/java-util-concurrent-Java并发工具集/">
 
 
-<meta name="description" content="java.util.concurrent - Java并发工具集   Java 5 添加了一个新的Java包， java.util.concurrent 包。这个包有一系列的类使开发并发（多线程）程序更简单。在这个包添加之前，你只能自己编写工具类。">
+<meta name="description" content="Java 5 添加了一个新的Java包， java.util.concurrent 包。这个包有一系列的类使开发并发（多线程）程序更简单。在这个包添加之前，你只能自己编写工具类。">
 <meta name="keywords" content="java,concurrency">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java.util.concurrent - Java并发工具集">
 <meta property="og:url" content="http://www.yilnz.com/java-util-concurrent-Java并发工具集/index.html">
 <meta property="og:site_name" content="Rainy Mood">
-<meta property="og:description" content="java.util.concurrent - Java并发工具集   Java 5 添加了一个新的Java包， java.util.concurrent 包。这个包有一系列的类使开发并发（多线程）程序更简单。在这个包添加之前，你只能自己编写工具类。">
+<meta property="og:description" content="Java 5 添加了一个新的Java包， java.util.concurrent 包。这个包有一系列的类使开发并发（多线程）程序更简单。在这个包添加之前，你只能自己编写工具类。">
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="http://www.yilnz.com/images/java.util.concurrent---Java并发工具集/20190903102554619.png">
-<meta property="og:updated_time" content="2019-09-03T03:23:50.833Z">
+<meta property="og:updated_time" content="2019-09-03T03:24:50.400Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java.util.concurrent - Java并发工具集">
-<meta name="twitter:description" content="java.util.concurrent - Java并发工具集   Java 5 添加了一个新的Java包， java.util.concurrent 包。这个包有一系列的类使开发并发（多线程）程序更简单。在这个包添加之前，你只能自己编写工具类。">
+<meta name="twitter:description" content="Java 5 添加了一个新的Java包， java.util.concurrent 包。这个包有一系列的类使开发并发（多线程）程序更简单。在这个包添加之前，你只能自己编写工具类。">
 <meta name="twitter:image" content="http://www.yilnz.com/images/java.util.concurrent---Java并发工具集/20190903102554619.png">
 
 
@@ -310,14 +310,14 @@
   <div class="post-toc" id="post-toc">
     <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#java-util-concurrent-Java并发工具集"><span class="toc-text">java.util.concurrent - Java并发工具集</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#BlockingQueue"><span class="toc-text">BlockingQueue</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#BlockQueue的使用"><span class="toc-text">BlockQueue的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#阻塞队列方法"><span class="toc-text">阻塞队列方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BlockingQueue的实现"><span class="toc-text">BlockingQueue的实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java-BlockingQueue的例子"><span class="toc-text">Java BlockingQueue的例子</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#BlockingQueue"><span class="toc-text">BlockingQueue</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#BlockQueue的使用"><span class="toc-text">BlockQueue的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#阻塞队列方法"><span class="toc-text">阻塞队列方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BlockingQueue的实现"><span class="toc-text">BlockingQueue的实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java-BlockingQueue的例子"><span class="toc-text">Java BlockingQueue的例子</span></a></li></ol></li></ol>
     </div>
   </div>
 
 
     <div class="post-content">
       
-        <h1 id="java-util-concurrent-Java并发工具集"><a href="#java-util-concurrent-Java并发工具集" class="headerlink" title="java.util.concurrent - Java并发工具集"></a>java.util.concurrent - Java并发工具集</h1><p>   Java 5 添加了一个新的Java包， <code>java.util.concurrent</code> 包。这个包有一系列的类使开发并发（多线程）程序更简单。在这个包添加之前，你只能自己编写工具类。</p>
+        <p>   Java 5 添加了一个新的Java包， <code>java.util.concurrent</code> 包。这个包有一系列的类使开发并发（多线程）程序更简单。在这个包添加之前，你只能自己编写工具类。</p>
 <a id="more"></a>
 <pre><code>在这个教程中我会带你浏览一遍 `java.util.concurrent` 类，一个一个的介绍，所以你可以学习怎样使用他们。我会使用Java 6的版本。我不确定对于Java 5有什么不同。
 我不会解释Java并发核心问题 - 也就是背后的理论。如果你感兴趣，看看我另一个教程 - `Java Concurrency tutorial`。
