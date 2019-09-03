@@ -34,20 +34,20 @@
 <link rel="canonical" href="http://www.yilnz.com/java-util-concurrent-Java并发工具集/">
 
 
-<meta name="description" content="java.util.concurrent - Java并发工具集Java 5 添加了一个新的Java包， `java.util.concurrent` 包。这个包有一系列的类使开发并发（多线程）程序更简单。在这个包添加之前，你只能自己编写工具类。  &amp;lt;!--more--&amp;gt;  在这个教程中我会带你浏览一遍 `java.util.concurrent` 类，一个一个的介绍，所以你可以学习怎">
+<meta name="description" content="java.util.concurrent - Java并发工具集   Java 5 添加了一个新的Java包， java.util.concurrent 包。这个包有一系列的类使开发并发（多线程）程序更简单。在这个包添加之前，你只能自己编写工具类。">
 <meta name="keywords" content="java,concurrency">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java.util.concurrent - Java并发工具集">
 <meta property="og:url" content="http://www.yilnz.com/java-util-concurrent-Java并发工具集/index.html">
 <meta property="og:site_name" content="Rainy Mood">
-<meta property="og:description" content="java.util.concurrent - Java并发工具集Java 5 添加了一个新的Java包， `java.util.concurrent` 包。这个包有一系列的类使开发并发（多线程）程序更简单。在这个包添加之前，你只能自己编写工具类。  &amp;lt;!--more--&amp;gt;  在这个教程中我会带你浏览一遍 `java.util.concurrent` 类，一个一个的介绍，所以你可以学习怎">
+<meta property="og:description" content="java.util.concurrent - Java并发工具集   Java 5 添加了一个新的Java包， java.util.concurrent 包。这个包有一系列的类使开发并发（多线程）程序更简单。在这个包添加之前，你只能自己编写工具类。">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:image" content="http://www.yilnz.com/java.util.concurrent---Java并发工具集/20190903102554619.png">
-<meta property="og:updated_time" content="2019-09-03T02:42:41.464Z">
+<meta property="og:image" content="http://www.yilnz.com/images/java.util.concurrent---Java并发工具集/20190903102554619.png">
+<meta property="og:updated_time" content="2019-09-03T02:44:30.237Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java.util.concurrent - Java并发工具集">
-<meta name="twitter:description" content="java.util.concurrent - Java并发工具集Java 5 添加了一个新的Java包， `java.util.concurrent` 包。这个包有一系列的类使开发并发（多线程）程序更简单。在这个包添加之前，你只能自己编写工具类。  &amp;lt;!--more--&amp;gt;  在这个教程中我会带你浏览一遍 `java.util.concurrent` 类，一个一个的介绍，所以你可以学习怎">
-<meta name="twitter:image" content="http://www.yilnz.com/java.util.concurrent---Java并发工具集/20190903102554619.png">
+<meta name="twitter:description" content="java.util.concurrent - Java并发工具集   Java 5 添加了一个新的Java包， java.util.concurrent 包。这个包有一系列的类使开发并发（多线程）程序更简单。在这个包添加之前，你只能自己编写工具类。">
+<meta name="twitter:image" content="http://www.yilnz.com/images/java.util.concurrent---Java并发工具集/20190903102554619.png">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x">
@@ -317,17 +317,19 @@
 
     <div class="post-content">
       
-        <h1 id="java-util-concurrent-Java并发工具集"><a href="#java-util-concurrent-Java并发工具集" class="headerlink" title="java.util.concurrent - Java并发工具集"></a>java.util.concurrent - Java并发工具集</h1><pre><code>Java 5 添加了一个新的Java包， `java.util.concurrent` 包。这个包有一系列的类使开发并发（多线程）程序更简单。在这个包添加之前，你只能自己编写工具类。
-
-&lt;!--more--&gt;
-
-在这个教程中我会带你浏览一遍 `java.util.concurrent` 类，一个一个的介绍，所以你可以学习怎样使用他们。我会使用Java 6的版本。我不确定对于Java 5有什么不同。
+        <h1 id="java-util-concurrent-Java并发工具集"><a href="#java-util-concurrent-Java并发工具集" class="headerlink" title="java.util.concurrent - Java并发工具集"></a>java.util.concurrent - Java并发工具集</h1><p>   Java 5 添加了一个新的Java包， <code>java.util.concurrent</code> 包。这个包有一系列的类使开发并发（多线程）程序更简单。在这个包添加之前，你只能自己编写工具类。</p>
+<a id="more"></a>
+<pre><code>在这个教程中我会带你浏览一遍 `java.util.concurrent` 类，一个一个的介绍，所以你可以学习怎样使用他们。我会使用Java 6的版本。我不确定对于Java 5有什么不同。
 我不会解释Java并发核心问题 - 也就是背后的理论。如果你感兴趣，看看我另一个教程 - `Java Concurrency tutorial`。
-</code></pre><h1 id="BlockingQueue"><a href="#BlockingQueue" class="headerlink" title="BlockingQueue"></a>BlockingQueue</h1><pre><code>&gt; + BlockingQueue的使用
-  + BlockingQueue的实现
-  + Java BlockingQueue的例子
-</code></pre><p> <code>java.util.concurrency</code> 包中的Java <code>BlockingQueue</code>代表了一个线程安全队列，用于放入和拿出。接下来会演示如何使用 <code>BlockingQueue</code>。<br> 这个教程不会讨论如何自己实现<code>BlockQueue</code>。如果你感兴趣，我有一个<code>Blocking Queues</code>的理论教程<code>Java Concurrency Tutorial</code>。</p>
-<h3 id="BlockQueue的使用"><a href="#BlockQueue的使用" class="headerlink" title="BlockQueue的使用"></a>BlockQueue的使用</h3><p> 一个<code>BlockingQueue</code>典型的用法是一个线程去生产objects，另一个线程去消费。这里有一个图阐述了这个理论：<br> <img src="/java.util.concurrent---Java并发工具集/20190903102554619.png" alt=""><br>    <strong>一个线程放入BlockingQueue，另一个线程拿出</strong></p>
+</code></pre><h1 id="BlockingQueue"><a href="#BlockingQueue" class="headerlink" title="BlockingQueue"></a>BlockingQueue</h1><blockquote>
+<ul>
+<li>BlockingQueue的使用</li>
+<li>BlockingQueue的实现</li>
+<li>Java BlockingQueue的例子</li>
+</ul>
+</blockquote>
+<p> <code>java.util.concurrency</code> 包中的Java <code>BlockingQueue</code>代表了一个线程安全队列，用于放入和拿出。接下来会演示如何使用 <code>BlockingQueue</code>。<br> 这个教程不会讨论如何自己实现<code>BlockQueue</code>。如果你感兴趣，我有一个<code>Blocking Queues</code>的理论教程<code>Java Concurrency Tutorial</code>。</p>
+<h3 id="BlockQueue的使用"><a href="#BlockQueue的使用" class="headerlink" title="BlockQueue的使用"></a>BlockQueue的使用</h3><p> 一个<code>BlockingQueue</code>典型的用法是一个线程去生产objects，另一个线程去消费。这里有一个图阐述了这个理论：<br> <img src="/images/java.util.concurrent---Java并发工具集/20190903102554619.png" alt=""><br>    <strong>一个线程放入BlockingQueue，另一个线程拿出</strong></p>
 <p>这个生产线程会持续的产生新的objects并插入队列中，直到队列到达上界。这个限制，换句话说。如果这个<code>blocking queue</code>到达了他的上界，这个生产线程在插入新的object时就会被阻塞。它会一直被阻塞直到消费线程从这个队列中拿走object。</p>
 <h4 id="阻塞队列方法"><a href="#阻塞队列方法" class="headerlink" title="阻塞队列方法"></a>阻塞队列方法</h4><p>一个<code>BlockingQueue</code>有4套不同的方法，包括插入，移除和检验元素是否在队列中。每套方法或多或少的有阻塞方法。这是一个方法表：</p>
 <table>
