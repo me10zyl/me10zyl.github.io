@@ -43,7 +43,7 @@
 <meta property="og:description" content="Java 5 添加了一个新的Java包， java.util.concurrent 包。这个包有一系列的类使开发并发（多线程）程序更简单。在这个包添加之前，你只能自己编写工具类。">
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="http://www.yilnz.com/images/java.util.concurrent---Java并发工具集/20190903102554619.png">
-<meta property="og:updated_time" content="2019-09-03T03:26:26.336Z">
+<meta property="og:updated_time" content="2019-09-03T03:30:20.328Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java.util.concurrent - Java并发工具集">
 <meta name="twitter:description" content="Java 5 添加了一个新的Java包， java.util.concurrent 包。这个包有一系列的类使开发并发（多线程）程序更简单。在这个包添加之前，你只能自己编写工具类。">
@@ -310,7 +310,7 @@
   <div class="post-toc" id="post-toc">
     <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#BlockingQueue"><span class="toc-text">BlockingQueue</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#BlockQueue的使用"><span class="toc-text">BlockQueue的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#阻塞队列方法"><span class="toc-text">阻塞队列方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BlockingQueue的实现"><span class="toc-text">BlockingQueue的实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java-BlockingQueue的例子"><span class="toc-text">Java BlockingQueue的例子</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#BlockingQueue"><span class="toc-text">BlockingQueue</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#BlockQueue的使用"><span class="toc-text">BlockQueue的使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BlockingQueue的实现"><span class="toc-text">BlockingQueue的实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java-BlockingQueue的例子"><span class="toc-text">Java BlockingQueue的例子</span></a></li></ol></li></ol>
     </div>
   </div>
 
@@ -330,7 +330,8 @@
 <p> <code>java.util.concurrency</code> 包中的Java <code>BlockingQueue</code>代表了一个线程安全队列，用于放入和拿出。接下来会演示如何使用 <code>BlockingQueue</code>。<br> 这个教程不会讨论如何自己实现<code>BlockQueue</code>。如果你感兴趣，我有一个<code>Blocking Queues</code>的理论教程<code>Java Concurrency Tutorial</code>。</p>
 <h3 id="BlockQueue的使用"><a href="#BlockQueue的使用" class="headerlink" title="BlockQueue的使用"></a>BlockQueue的使用</h3><p> 一个<code>BlockingQueue</code>典型的用法是一个线程去生产objects，另一个线程去消费。这里有一个图阐述了这个理论：<br> <img src="/images/java.util.concurrent---Java并发工具集/20190903102554619.png" alt=""><br>    <strong>一个线程放入BlockingQueue，另一个线程拿出</strong></p>
 <p>这个生产线程会持续的产生新的objects并插入队列中，直到队列到达上界。这个限制，换句话说。如果这个<code>blocking queue</code>到达了他的上界，这个生产线程在插入新的object时就会被阻塞。它会一直被阻塞直到消费线程从这个队列中拿走object。</p>
-<h4 id="阻塞队列方法"><a href="#阻塞队列方法" class="headerlink" title="阻塞队列方法"></a>阻塞队列方法</h4><p>一个<code>BlockingQueue</code>，对于插入，移除和检验元素是否在队列中，都有4个不同的行为。如果请求的操作不能立即执行，每个行为表现也不同。这是一个方法表：</p>
+<pre><code>#### BlockingQueue的方法
+</code></pre><p>一个<code>BlockingQueue</code>，对于插入，移除和检验元素是否在队列中，都有4个不同的行为。如果请求的操作不能立即执行，每个行为表现也不同。这是一个方法表：</p>
 <table>
 <thead>
 <tr>
