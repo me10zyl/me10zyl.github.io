@@ -22,17 +22,6 @@
     </entry>
     
     <entry>
-      <title>20190917152348</title>
-      <link href="/Java8%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E6%96%B0%E7%89%B9%E6%80%A7/"/>
-      <url>/Java8%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E6%96%B0%E7%89%B9%E6%80%A7/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    <entry>
       <title>java.util.concurrent - Java并发工具集</title>
       <link href="/java-util-concurrent-Java%E5%B9%B6%E5%8F%91%E5%B7%A5%E5%85%B7%E9%9B%86/"/>
       <url>/java-util-concurrent-Java%E5%B9%B6%E5%8F%91%E5%B7%A5%E5%85%B7%E9%9B%86/</url>
@@ -56,7 +45,7 @@
       <link href="/MacOSX-APP-%E6%B8%85%E5%8D%95/"/>
       <url>/MacOSX-APP-%E6%B8%85%E5%8D%95/</url>
       
-        <content type="html"><![CDATA[<p>现在正在用的APP清单：<br>更新日期:</p><p><date>Wed Sep 18 13:50:39 CST 2019</date><br><a id="more"></a></p><p>本列表由ls_app_md脚本生成：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line">cd ~/blog</span><br><span class="line"><span class="meta">$</span><span class="bash">(ls /Applications | grep -v <span class="string">'^\.'</span> | sed -n <span class="string">'s/\(.*\).app$/+ \1/p;'</span> &gt; app.list)</span></span><br><span class="line">sed -i "" "s/&lt;date&gt;.*&lt;\/date&gt;/&lt;date&gt;`date`&lt;\/date&gt;/;/^\+.*/d;/^list:/r app.list" source/_posts/MacOSX-APP-清单.md</span><br></pre></td></tr></table></figure></p><p>list:</p><ul><li>Alfred 3</li><li>Aliwangwang</li><li>Anki</li><li>App Store</li><li>Automator</li><li>BaiduNetdisk_mac</li><li>Be Focused</li><li>Beyond Compare</li><li>Calculator</li><li>Calendar</li><li>Chess</li><li>CleanMyMac 3</li><li>Contacts</li><li>DVD Player</li><li>Dash</li><li>Dashboard</li><li>DataGrip</li><li>Dictionary</li><li>Eudic</li><li>FWMSO2016VL</li><li>FaceTime</li><li>Flotato</li><li>Flux</li><li>Font Book</li><li>GSP5</li><li>GeoGebra Geometry</li><li>Go2Shell</li><li>GoodSync</li><li>Google Chrome</li><li>GsExplorer</li><li>HexoEditor</li><li>Image Capture</li><li>IntelliJ IDEA</li><li>JD-GUI</li><li>JavaFX Scene Builder 2.0</li><li>KeePassXC</li><li>Kext Utility</li><li>Kext Wizard</li><li>LICEcap</li><li>Launchpad</li><li>Lepton</li><li>Listen1</li><li>Mail</li><li>Maipo</li><li>Maps</li><li>Messages</li><li>Microsoft Excel</li><li>Microsoft Remote Desktop</li><li>Microsoft Word</li><li>Mission Control</li><li>Moom</li><li>Mos</li><li>MySQLWorkbench</li><li>Navicat Premium</li><li>NeteaseMusic</li><li>Noizio</li><li>Notes</li><li>Nutstore</li><li>OmniFocus</li><li>OmniGraffle</li><li>OneDrive</li><li>OpenBoard</li><li>OpenWebMonitor3</li><li>Paste</li><li>Pennywise</li><li>Photo Booth</li><li>Photos</li><li>Pomotodo</li><li>Pomy</li><li>Preview</li><li>Proxyee</li><li>QQ</li><li>QQLive</li><li>QuickTime Player</li><li>Quiver</li><li>Reflector 3</li><li>Reminders</li><li>Safari</li><li>Script Debugger</li><li>SecureCRT</li><li>ShadowsocksX-NG-R8</li><li>Siri</li><li>Sketch</li><li>SnippetsLab</li><li>Steam</li><li>Stickies</li><li>System Preferences</li><li>TeaCode</li><li>Telegram</li><li>TextEdit</li><li>TextExpander</li><li>Thunder</li><li>Time Machine</li><li>TweetDeck</li><li>VMware Fusion</li><li>Visual Studio Code</li><li>WeChat</li><li>Wireshark</li><li>Workspaces</li><li>Xcode</li><li>Yoink</li><li>YoudaoNote</li><li>iBooks</li><li>iStat Menus</li><li>iTerm</li><li>iTunes</li><li>iZip Unarchiver</li><li>irreader</li><li>labelme</li><li>oss-browser</li><li>rdm</li><li>thief-book</li><li>wechatwebdevtools</li><li>企业微信</li><li>小程序开发者工具</li><li>爱奇艺</li><li>网易有道词典</li></ul>]]></content>
+        <content type="html"><![CDATA[<p>现在正在用的APP清单：<br>更新日期:</p><p><date>Wed Sep 18 13:53:40 CST 2019</date><br><a id="more"></a></p><p>本列表由ls_app_md脚本生成：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line">cd ~/blog</span><br><span class="line"><span class="meta">$</span><span class="bash">(ls /Applications | grep -v <span class="string">'^\.'</span> | sed -n <span class="string">'s/\(.*\).app$/+ \1/p;'</span> &gt; app.list)</span></span><br><span class="line">sed -i "" "s/&lt;date&gt;.*&lt;\/date&gt;/&lt;date&gt;`date`&lt;\/date&gt;/;/^\+.*/d;/^list:/r app.list" source/_posts/MacOSX-APP-清单.md</span><br></pre></td></tr></table></figure></p><p>list:</p><ul><li>Alfred 3</li><li>Aliwangwang</li><li>Anki</li><li>App Store</li><li>Automator</li><li>BaiduNetdisk_mac</li><li>Be Focused</li><li>Beyond Compare</li><li>Calculator</li><li>Calendar</li><li>Chess</li><li>CleanMyMac 3</li><li>Contacts</li><li>DVD Player</li><li>Dash</li><li>Dashboard</li><li>DataGrip</li><li>Dictionary</li><li>Eudic</li><li>FWMSO2016VL</li><li>FaceTime</li><li>Flotato</li><li>Flux</li><li>Font Book</li><li>GSP5</li><li>GeoGebra Geometry</li><li>Go2Shell</li><li>GoodSync</li><li>Google Chrome</li><li>GsExplorer</li><li>HexoEditor</li><li>Image Capture</li><li>IntelliJ IDEA</li><li>JD-GUI</li><li>JavaFX Scene Builder 2.0</li><li>KeePassXC</li><li>Kext Utility</li><li>Kext Wizard</li><li>LICEcap</li><li>Launchpad</li><li>Lepton</li><li>Listen1</li><li>Mail</li><li>Maipo</li><li>Maps</li><li>Messages</li><li>Microsoft Excel</li><li>Microsoft Remote Desktop</li><li>Microsoft Word</li><li>Mission Control</li><li>Moom</li><li>Mos</li><li>MySQLWorkbench</li><li>Navicat Premium</li><li>NeteaseMusic</li><li>Noizio</li><li>Notes</li><li>Nutstore</li><li>OmniFocus</li><li>OmniGraffle</li><li>OneDrive</li><li>OpenBoard</li><li>OpenWebMonitor3</li><li>Paste</li><li>Pennywise</li><li>Photo Booth</li><li>Photos</li><li>Pomotodo</li><li>Pomy</li><li>Preview</li><li>Proxyee</li><li>QQ</li><li>QQLive</li><li>QuickTime Player</li><li>Quiver</li><li>Reflector 3</li><li>Reminders</li><li>Safari</li><li>Script Debugger</li><li>SecureCRT</li><li>ShadowsocksX-NG-R8</li><li>Siri</li><li>Sketch</li><li>SnippetsLab</li><li>Steam</li><li>Stickies</li><li>System Preferences</li><li>TeaCode</li><li>Telegram</li><li>TextEdit</li><li>TextExpander</li><li>Thunder</li><li>Time Machine</li><li>TweetDeck</li><li>VMware Fusion</li><li>Visual Studio Code</li><li>WeChat</li><li>Wireshark</li><li>Workspaces</li><li>Xcode</li><li>Yoink</li><li>YoudaoNote</li><li>iBooks</li><li>iStat Menus</li><li>iTerm</li><li>iTunes</li><li>iZip Unarchiver</li><li>irreader</li><li>labelme</li><li>oss-browser</li><li>rdm</li><li>thief-book</li><li>wechatwebdevtools</li><li>企业微信</li><li>小程序开发者工具</li><li>爱奇艺</li><li>网易有道词典</li></ul>]]></content>
       
       
       
@@ -310,9 +299,9 @@
       
         <tags>
             
-            <tag> java </tag>
-            
             <tag> intellij idea </tag>
+            
+            <tag> java </tag>
             
         </tags>
       
