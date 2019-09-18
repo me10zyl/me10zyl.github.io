@@ -43,7 +43,7 @@
 <meta property="og:description" content="Java 5 添加了一个新的Java包， java.util.concurrent 包。这个包有一系列的类使开发并发（多线程）程序更简单。在这个包添加之前，你只能自己编写工具类。">
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="http://www.yilnz.com/images/java.util.concurrent---Java并发工具集/20190903102554619.png">
-<meta property="og:updated_time" content="2019-09-03T03:43:14.625Z">
+<meta property="og:updated_time" content="2019-09-03T05:40:32.058Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java.util.concurrent - Java并发工具集">
 <meta name="twitter:description" content="Java 5 添加了一个新的Java包， java.util.concurrent 包。这个包有一系列的类使开发并发（多线程）程序更简单。在这个包添加之前，你只能自己编写工具类。">
@@ -310,7 +310,7 @@
   <div class="post-toc" id="post-toc">
     <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#BlockingQueue"><span class="toc-text">BlockingQueue</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#BlockQueue的使用"><span class="toc-text">BlockQueue的使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BlockingQueue的实现"><span class="toc-text">BlockingQueue的实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java-BlockingQueue的例子"><span class="toc-text">Java BlockingQueue的例子</span></a></li></ol></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#ArrayBlockingQueue"><span class="toc-text">ArrayBlockingQueue</span></a></li>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#BlockingQueue"><span class="toc-text">BlockingQueue</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#BlockQueue的使用"><span class="toc-text">BlockQueue的使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BlockingQueue的实现"><span class="toc-text">BlockingQueue的实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java-BlockingQueue的例子"><span class="toc-text">Java BlockingQueue的例子</span></a></li></ol></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#ArrayBlockingQueue"><span class="toc-text">ArrayBlockingQueue</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#DelayQueue"><span class="toc-text">DelayQueue</span></a></li>
     </div>
   </div>
 
@@ -395,6 +395,11 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">BlockingQueue queue = <span class="keyword">new</span> ArrayBlockingQueue(<span class="number">1024</span>);</span><br><span class="line"></span><br><span class="line">queue.put(<span class="string">"1"</span>);</span><br><span class="line"></span><br><span class="line">Object object = queue.take();</span><br></pre></td></tr></table></figure>
 <p><code>BlockingQueue</code>例子使用了Java泛型。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">BlockingQueue&lt;String&gt; queue = <span class="keyword">new</span> ArrayBlockingQueue&lt;String&gt;(<span class="number">1024</span>);</span><br><span class="line"></span><br><span class="line">queue.put(<span class="string">"1"</span>);</span><br><span class="line"></span><br><span class="line">String string = queue.take();</span><br></pre></td></tr></table></figure>
+<h1 id="DelayQueue"><a href="#DelayQueue" class="headerlink" title="DelayQueue"></a>DelayQueue</h1><p><code>DelayQueue</code>类实现了<code>BlockingQueue</code>接口。阅读<code>BlockingQueue</code>获取这个接口的更多信息。</p>
+<p><code>DelayQueue</code>在内部阻塞元素直到一个特定的延时过期。元素必须实现<code>java.util.concurrent.Delayed</code>接口。这是接口的样子：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Delayed</span> <span class="keyword">extends</span> <span class="title">Comparable</span>&lt;<span class="title">Delayed</span>&gt; </span>&#123;</span><br><span class="line"></span><br><span class="line"> <span class="function"><span class="keyword">public</span> <span class="keyword">long</span> <span class="title">getDelay</span><span class="params">(TimeUnit timeUnit)</span></span>;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>getDelay()</code>方法返回值在被释放之前应该会被延迟保留，如果返回0或负数，延迟就已过期了，元素会在下一次在<code>DelayQueue</code>调用<code>take()</code> etc. 被释放。</p>
+
       
     </div>
 
@@ -458,6 +463,12 @@
         
         
   <nav class="post-nav">
+    
+      <a class="prev" href="/Java8中的一些新特性/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">20190917152348</span>
+        <span class="prev-text nav-mobile">上一篇</span>
+      </a>
     
     
       <a class="next" href="/MacOSX-APP-清单/">

@@ -12,12 +12,12 @@
 
 
 
-  <meta name="description" content="Intelij Idea 使用 Tomcat 运行/调试 Web 应用 （超详细）">
+  <meta name="description" content="Java Feature 和 JS Promise">
 
 
 
 
-  <meta name="keywords" content="java,intellij idea,">
+  <meta name="keywords" content="java,javascript,">
 
 
 
@@ -31,27 +31,21 @@
 
 
 
-<link rel="canonical" href="http://www.yilnz.com/idea-tomcat/">
+<link rel="canonical" href="http://www.yilnz.com/Java-Feature-和-JS-Promise/">
 
 
-<meta name="description" content="工欲善其事必先利其器，本文拟用 Intellij Idea 来启动 Tomcat 运行/调试 Web 应用，深入 Idea 与 Tomcat 结合调试，减少项目部署时间。">
-<meta name="keywords" content="java,intellij idea">
+<meta name="description" content="Java Feature 和 JS Promise之间的关系，CompletableFuture相当于JS中的Promise，而Futrue中的get方法相当于JS中Promise的await关键字。">
+<meta name="keywords" content="java,javascript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Intelij Idea 使用 Tomcat 运行&#x2F;调试 Web 应用 （超详细）">
-<meta property="og:url" content="http://www.yilnz.com/idea-tomcat/index.html">
+<meta property="og:title" content="Java Feature 和 JS Promise">
+<meta property="og:url" content="http://www.yilnz.com/Java-Feature-和-JS-Promise/index.html">
 <meta property="og:site_name" content="Rainy Mood">
-<meta property="og:description" content="工欲善其事必先利其器，本文拟用 Intellij Idea 来启动 Tomcat 运行/调试 Web 应用，深入 Idea 与 Tomcat 结合调试，减少项目部署时间。">
+<meta property="og:description" content="Java Feature 和 JS Promise之间的关系，CompletableFuture相当于JS中的Promise，而Futrue中的get方法相当于JS中Promise的await关键字。">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:image" content="http://www.yilnz.com/images/idea/1.png">
-<meta property="og:image" content="http://www.yilnz.com/images/idea/2.png">
-<meta property="og:image" content="http://www.yilnz.com/images/idea/3.png">
-<meta property="og:image" content="http://www.yilnz.com/images/idea/4.png">
-<meta property="og:image" content="http://www.yilnz.com/images/idea/5.png">
-<meta property="og:updated_time" content="2018-10-12T01:19:04.378Z">
+<meta property="og:updated_time" content="2019-09-18T05:50:29.414Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Intelij Idea 使用 Tomcat 运行&#x2F;调试 Web 应用 （超详细）">
-<meta name="twitter:description" content="工欲善其事必先利其器，本文拟用 Intellij Idea 来启动 Tomcat 运行/调试 Web 应用，深入 Idea 与 Tomcat 结合调试，减少项目部署时间。">
-<meta name="twitter:image" content="http://www.yilnz.com/images/idea/1.png">
+<meta name="twitter:title" content="Java Feature 和 JS Promise">
+<meta name="twitter:description" content="Java Feature 和 JS Promise之间的关系，CompletableFuture相当于JS中的Promise，而Futrue中的get方法相当于JS中Promise的await关键字。">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x">
@@ -100,7 +94,7 @@
 
 
 
-    <title> Intelij Idea 使用 Tomcat 运行/调试 Web 应用 （超详细） · Rainy Mood </title>
+    <title> Java Feature 和 JS Promise · Rainy Mood </title>
   </head>
 
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -274,7 +268,7 @@
 </nav>
 
 <nav style="clear:left">
-	<a href="/"> 首页 </a> &gt <a href="http://www.yilnz.com/idea-tomcat/">idea-tomcat</a>
+	<a href="/"> 首页 </a> &gt <a href="http://www.yilnz.com/Java-Feature-和-JS-Promise/">Java-Feature-和-JS-Promise</a>
 </nav>
 
       </header>
@@ -289,20 +283,20 @@
     <header class="post-header">
       <h1 class="post-title">
         
-          Intelij Idea 使用 Tomcat 运行/调试 Web 应用 （超详细）
+          Java Feature 和 JS Promise
         
       </h1>
 
       <div class="post-meta">
         <span class="post-time">
-          2017年11月1日
+          2019年9月18日
 	</span>
         
           <div class="post-tags" style="display:inline-block">
             
               <a href="/tags/java/">#java</a>
             
-              <a href="/tags/intellij-idea/">#intellij idea</a>
+              <a href="/tags/javascript/">#javascript</a>
             
           </div>
         
@@ -311,62 +305,12 @@
 
     
     
-  <div class="post-toc" id="post-toc">
-    <h2 class="post-toc-title">文章目录</h2>
-    <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简单使用"><span class="toc-text">简单使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#高级应用"><span class="toc-text">高级应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#On-‘Update’-action"><span class="toc-text">On ‘Update’ action</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#On-frame-deactivation"><span class="toc-text">On frame deactivation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Deploy-applications-configured-in-Tomcat-instance"><span class="toc-text">Deploy applications configured in Tomcat instance</span></a></li></ol>
-    </div>
-  </div>
-
 
     <div class="post-content">
       
-        <p>工欲善其事必先利其器，本文拟用 Intellij Idea 来启动 Tomcat 运行/调试 Web 应用，深入 Idea 与 Tomcat 结合调试，减少项目部署时间。</p>
-<a id="more"></a>
-<h2 id="简单使用"><a href="#简单使用" class="headerlink" title="简单使用"></a>简单使用</h2><ol>
-<li>Run Configuration -&gt; 新建 Tomcat Run Configuration</li>
-</ol>
-<p><img src="/images/idea/1.png" alt="image"></p>
-<ol start="2">
-<li><p>选择当更新操作(Ctrl + F10)或者 Intellij Idea 失去焦点的时候更新Tomcat 中的 classes和资源（热交换）<br><img src="/images/idea/2.png" alt="image"></p>
-</li>
-<li><p>选择部署的artifact，这里选 war exploded, 为什么不选 war, 因为war是war exploded 打包后的， war exploded 不打包，而且 war 不支持 静态资源的热部署<br><img src="/images/idea/3.png" alt="image"></p>
-</li>
-</ol>
-<ol start="2">
-<li>Run/Debug </li>
-</ol>
-<p><img src="/images/idea/4.png" alt="image"></p>
-<h2 id="高级应用"><a href="#高级应用" class="headerlink" title="高级应用"></a>高级应用</h2><p>设置 Tomcat 配置的时候可以看到， On Update action 和 On frame deactivation， 这个是指什么，接下来会介绍。</p>
-<h3 id="On-‘Update’-action"><a href="#On-‘Update’-action" class="headerlink" title="On ‘Update’ action"></a>On ‘Update’ action</h3><p>顾名思义，更新操作，是指 ‘Update application’， 快捷键为 Ctrl + F10 ，或者点击运行/调试 View左下角，与 Build Project/Module(Ctrl + F9) 不是同一个概念</p>
-<p><img src="/images/idea/5.png" alt="image"></p>
-<p>对于 exploded artifacts ， 可选的选项为</p>
-<ul>
-<li>Update Resources. 所有改变的资源都更新（CSS、HTML、JS等）</li>
-<li>Update classes and resources. 所有改变的资源和改变的Java 类都重新编译更新  </li>
-</ul>
-<blockquote>
-<p>在 Debug 模式下, 更新的类可以热交换(hot swapped). 在 Run 模式下, IntelliJ IDEA 只更新输出文件夹中的改变的类. 这个类实际上到底重载没有，取决于运行环境的兼容性。</p>
-</blockquote>
-<ul>
-<li>Redeploy. 应用 artifact 重新构建和重新部署</li>
-<li>Restart Server. 服务器重启，应用 artifact 重新构建和重新部署</li>
-</ul>
-<p>对于 packed artifacts （不带exploded的)，可选的选项为</p>
-<ul>
-<li>Hot swap classes. 改变的类重新编译和在运行时重加载. 只在 <strong>debug</strong> 模式下有用</li>
-<li>Redeploy. 应用 artifact 重新构建和重新部署</li>
-<li>Restart Server. 服务器重启，应用 artifact 重新构建和重新部署</li>
-</ul>
-<h2 id="On-frame-deactivation"><a href="#On-frame-deactivation" class="headerlink" title="On frame deactivation"></a>On frame deactivation</h2><p>这个名词的意思即 从Intellij idea 切换到其他程序，触发的操作。除了<br>Do nothing 选项，其他选项都跟 ‘On Update action’一致。</p>
-<h2 id="Deploy-applications-configured-in-Tomcat-instance"><a href="#Deploy-applications-configured-in-Tomcat-instance" class="headerlink" title="Deploy applications configured in Tomcat instance"></a>Deploy applications configured in Tomcat instance</h2><p>勾选上这个选项，这样就会部署 tomcat 中的其他应用， 比如</p>
-<ul>
-<li>docs</li>
-<li>examples</li>
-<li>host-manager</li>
-<li>manager</li>
-<li>ROOT</li>
-</ul>
+        <p>Java Feature 和 JS Promise之间的关系，<code>CompletableFuture</code>相当于JS中的Promise，而<code>Futrue</code>中的get方法相当于JS中Promise的await关键字。<br><a id="more"></a></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">final</span> CompletableFuture&lt;String&gt; future1 = CompletableFuture.supplyAsync(() -&gt; &#123;</span><br><span class="line">          <span class="keyword">try</span> &#123;</span><br><span class="line">              Thread.sleep(<span class="number">1000</span>);</span><br><span class="line">          &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">              e.printStackTrace();</span><br><span class="line">          &#125;</span><br><span class="line">          <span class="keyword">return</span> <span class="string">"1"</span>;</span><br><span class="line">      &#125;);</span><br><span class="line"></span><br><span class="line">      <span class="keyword">final</span> ExecutorService executorService = Executors.newCachedThreadPool();</span><br><span class="line">      <span class="keyword">final</span> Future&lt;String&gt; feture = executorService.submit(() -&gt; &#123;</span><br><span class="line">          <span class="keyword">try</span> &#123;</span><br><span class="line">              Thread.sleep(<span class="number">1000</span>);</span><br><span class="line">          &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">              e.printStackTrace();</span><br><span class="line">          &#125;</span><br><span class="line">          <span class="keyword">return</span> <span class="string">"1"</span>;</span><br><span class="line">      &#125;);</span><br><span class="line">      future1.thenAccept(System.out::println);</span><br><span class="line"></span><br><span class="line">      System.out.println(feture.get());</span><br><span class="line"></span><br><span class="line">      future1.join();</span><br><span class="line">      executorService.shutdown();</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">rs, rj</span>) =&gt;</span> &#123;</span><br><span class="line">       setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>rs(<span class="number">1</span>), <span class="number">1000</span>)</span><br><span class="line">   &#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params">res</span>)</span>&#123;</span><br><span class="line">       <span class="built_in">console</span>.log(res)</span><br><span class="line">   &#125;)</span><br><span class="line"></span><br><span class="line">   <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">doWork</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">       <span class="built_in">console</span>.log(<span class="keyword">await</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">rs, rj</span>) =&gt;</span> setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>rs(<span class="number">1</span>), <span class="number">1000</span>)))</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   doWork()</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -386,7 +330,7 @@
     </p>
     <p class="copyright-item">
       <span>链接: </span>
-      <a href="http://www.yilnz.com/idea-tomcat/">http://www.yilnz.com/idea-tomcat/</a>
+      <a href="http://www.yilnz.com/Java-Feature-和-JS-Promise/">http://www.yilnz.com/Java-Feature-和-JS-Promise/</a>
     </p>
 
     <p class="copyright-item lincese">
@@ -424,7 +368,7 @@
             
               <a href="/tags/java/">java</a>
             
-              <a href="/tags/intellij-idea/">intellij idea</a>
+              <a href="/tags/javascript/">javascript</a>
             
           </div>
         
@@ -432,15 +376,9 @@
         
   <nav class="post-nav">
     
-      <a class="prev" href="/idea-artifact/">
-        <i class="iconfont icon-left"></i>
-        <span class="prev-text nav-default">Intellij Idea - 理解 artifact 并与之工作</span>
-        <span class="prev-text nav-mobile">上一篇</span>
-      </a>
     
-    
-      <a class="next" href="/openvpn/">
-        <span class="next-text nav-default">Ubuntu 搭建 OpenVPN 翻墙</span>
+      <a class="next" href="/Java8中的一些新特性/">
+        <span class="next-text nav-default">20190917152348</span>
         <span class="prev-text nav-mobile">下一篇</span>
         <i class="iconfont icon-right"></i>
       </a>
@@ -544,9 +482,9 @@
   
   <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://www.yilnz.com/idea-tomcat/';
-        this.page.identifier = 'idea-tomcat/';
-        this.page.title = 'Intelij Idea 使用 Tomcat 运行/调试 Web 应用 （超详细）';
+        this.page.url = 'http://www.yilnz.com/Java-Feature-和-JS-Promise/';
+        this.page.identifier = 'Java-Feature-和-JS-Promise/';
+        this.page.title = 'Java Feature 和 JS Promise';
     };
     (function() {
     var d = document, s = d.createElement('script');
