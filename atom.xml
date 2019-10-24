@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.yilnz.com/"/>
-  <updated>2019-10-24T02:24:59.200Z</updated>
+  <updated>2019-10-24T02:36:28.471Z</updated>
   <id>http://www.yilnz.com/</id>
   
   <author>
@@ -15,20 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>20191024102459</title>
-    <link href="http://www.yilnz.com/20191024102459/"/>
-    <id>http://www.yilnz.com/20191024102459/</id>
-    <published>2019-10-24T02:24:59.000Z</published>
-    <updated>2019-10-24T02:24:59.200Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>如何上传jar包到maven中心仓库</title>
@@ -42,20 +28,6 @@
     <summary type="html">
     
       &lt;p&gt;如何上传jar包到maven中心仓库&lt;br&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>20191024102451</title>
-    <link href="http://www.yilnz.com/20191024102451/"/>
-    <id>http://www.yilnz.com/20191024102451/</id>
-    <published>2019-10-24T02:24:51.000Z</published>
-    <updated>2019-10-24T02:24:51.626Z</updated>
-    
-    <summary type="html">
     
     </summary>
     
@@ -133,14 +105,14 @@
     <link href="http://www.yilnz.com/MacOSX-APP-%E6%B8%85%E5%8D%95/"/>
     <id>http://www.yilnz.com/MacOSX-APP-清单/</id>
     <published>2019-05-24T01:52:25.000Z</published>
-    <updated>2019-10-24T02:36:35.837Z</updated>
+    <updated>2019-10-24T02:39:58.684Z</updated>
     
-    <content type="html"><![CDATA[<p>现在正在用的APP清单：<br>更新日期:</p><p><date>Thu Oct 24 10:36:35 CST 2019</date><br><a id="more"></a></p><p>本列表由ls_app_md脚本生成：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line">cd ~/blog</span><br><span class="line"><span class="meta">$</span><span class="bash">(ls /Applications | grep -v <span class="string">'^\.'</span> | sed -n <span class="string">'s/\(.*\).app$/+ \1/p;'</span> &gt; app.list)</span></span><br><span class="line">sed -i "" "s/&lt;date&gt;.*&lt;\/date&gt;/&lt;date&gt;`date`&lt;\/date&gt;/;/^\+.*/d;/^list:/r app.list" source/_posts/MacOSX-APP-清单.md</span><br></pre></td></tr></table></figure></p><p>list:</p><ul><li>Alfred 3</li><li>Aliwangwang</li><li>Anki</li><li>App Store</li><li>Automator</li><li>BaiduNetdisk_mac</li><li>Be Focused</li><li>Beyond Compare</li><li>Calculator</li><li>Calendar</li><li>Charles</li><li>Chess</li><li>CleanMyMac 3</li><li>Contacts</li><li>DVD Player</li><li>Dash</li><li>Dashboard</li><li>DataGrip</li><li>Dictionary</li><li>Eudic</li><li>FWMSO2016VL</li><li>FaceTime</li><li>Flotato</li><li>Flux</li><li>Font Book</li><li>GSP5</li><li>GeoGebra Geometry</li><li>Go2Shell</li><li>GoodSync</li><li>Google Chrome</li><li>GsExplorer</li><li>HexoEditor</li><li>Image Capture</li><li>IntelliJ IDEA</li><li>JD-GUI</li><li>JavaFX Scene Builder 2.0</li><li>KeePassXC</li><li>Kext Utility</li><li>Kext Wizard</li><li>LICEcap</li><li>Launchpad</li><li>Lepton</li><li>Listen1</li><li>Mail</li><li>Maipo</li><li>Maps</li><li>Messages</li><li>Microsoft Excel</li><li>Microsoft Remote Desktop</li><li>Microsoft Word</li><li>Mission Control</li><li>Moom</li><li>Mos</li><li>MySQLWorkbench</li><li>Navicat Premium</li><li>NeteaseMusic</li><li>Noizio</li><li>Notes</li><li>Nutstore</li><li>OmniFocus</li><li>OmniGraffle</li><li>OneDrive</li><li>OpenBoard</li><li>OpenWebMonitor3</li><li>Paste</li><li>Pennywise</li><li>Photo Booth</li><li>Photos</li><li>Pomotodo</li><li>Pomy</li><li>Preview</li><li>Proxyee</li><li>QQ</li><li>QQLive</li><li>QuickTime Player</li><li>Quiver</li><li>Reflector 3</li><li>Reminders</li><li>Safari</li><li>Script Debugger</li><li>SecureCRT</li><li>ShadowsocksX-NG-R8</li><li>Siri</li><li>Sketch</li><li>SnippetsLab</li><li>Steam</li><li>Stickies</li><li>System Preferences</li><li>TeaCode</li><li>Telegram</li><li>TextEdit</li><li>TextExpander</li><li>Thunder</li><li>Time Machine</li><li>TweetDeck</li><li>VMware Fusion</li><li>Visual Studio Code</li><li>WeChat</li><li>Wireshark</li><li>Workspaces</li><li>Xcode</li><li>Yoink</li><li>YoudaoNote</li><li>iBooks</li><li>iStat Menus</li><li>iTerm</li><li>iTunes</li><li>iZip Unarchiver</li><li>irreader</li><li>labelme</li><li>oss-browser</li><li>rdm</li><li>thief-book</li><li>wechatwebdevtools</li><li>企业微信</li><li>小程序开发者工具</li><li>爱奇艺</li><li>网易有道词典</li></ul>]]></content>
+    <content type="html"><![CDATA[<p>现在正在用的APP清单：<br>更新日期:</p><p><date>2019年10月24日 星期四 10时39分58秒 CST</date><br><a id="more"></a></p><p>本列表由ls_app_md脚本生成：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></span><br><span class="line">cd ~/blog</span><br><span class="line"><span class="meta">$</span><span class="bash">(ls /Applications | grep -v <span class="string">'^\.'</span> | sed -n <span class="string">'s/\(.*\).app$/+ \1/p;'</span> &gt; app.list)</span></span><br><span class="line">sed -i "" "s/&lt;date&gt;.*&lt;\/date&gt;/&lt;date&gt;`date`&lt;\/date&gt;/;/^\+.*/d;/^list:/r app.list" source/_posts/MacOSX-APP-清单.md</span><br></pre></td></tr></table></figure></p><p>list:</p><ul><li>Alfred 3</li><li>Aliwangwang</li><li>Anki</li><li>App Store</li><li>Automator</li><li>BaiduNetdisk_mac</li><li>Be Focused</li><li>Beyond Compare</li><li>Calculator</li><li>Calendar</li><li>Charles</li><li>Chess</li><li>CleanMyMac 3</li><li>Contacts</li><li>DVD Player</li><li>Dash</li><li>Dashboard</li><li>DataGrip</li><li>Dictionary</li><li>Eudic</li><li>FWMSO2016VL</li><li>FaceTime</li><li>Flotato</li><li>Flux</li><li>Font Book</li><li>GSP5</li><li>GeoGebra Geometry</li><li>Go2Shell</li><li>GoodSync</li><li>Google Chrome</li><li>GsExplorer</li><li>HexoEditor</li><li>Image Capture</li><li>IntelliJ IDEA</li><li>JD-GUI</li><li>JavaFX Scene Builder 2.0</li><li>KeePassXC</li><li>Kext Utility</li><li>Kext Wizard</li><li>LICEcap</li><li>Launchpad</li><li>Lepton</li><li>Listen1</li><li>Mail</li><li>Maipo</li><li>Maps</li><li>Messages</li><li>Microsoft Excel</li><li>Microsoft Remote Desktop</li><li>Microsoft Word</li><li>Mission Control</li><li>Moom</li><li>Mos</li><li>MySQLWorkbench</li><li>Navicat Premium</li><li>NeteaseMusic</li><li>Noizio</li><li>Notes</li><li>Nutstore</li><li>OmniFocus</li><li>OmniGraffle</li><li>OneDrive</li><li>OpenBoard</li><li>OpenWebMonitor3</li><li>Paste</li><li>Pennywise</li><li>Photo Booth</li><li>Photos</li><li>Pomotodo</li><li>Pomy</li><li>Preview</li><li>Proxyee</li><li>QQ</li><li>QQLive</li><li>QuickTime Player</li><li>Quiver</li><li>Reflector 3</li><li>Reminders</li><li>Safari</li><li>Script Debugger</li><li>SecureCRT</li><li>ShadowsocksX-NG-R8</li><li>Siri</li><li>Sketch</li><li>SnippetsLab</li><li>Steam</li><li>Stickies</li><li>System Preferences</li><li>TeaCode</li><li>Telegram</li><li>TextEdit</li><li>TextExpander</li><li>Thunder</li><li>Time Machine</li><li>TweetDeck</li><li>VMware Fusion</li><li>Visual Studio Code</li><li>WeChat</li><li>Wireshark</li><li>Workspaces</li><li>Xcode</li><li>Yoink</li><li>YoudaoNote</li><li>iBooks</li><li>iStat Menus</li><li>iTerm</li><li>iTunes</li><li>iZip Unarchiver</li><li>irreader</li><li>labelme</li><li>oss-browser</li><li>rdm</li><li>thief-book</li><li>wechatwebdevtools</li><li>爱奇艺</li><li>企业微信</li><li>网易有道词典</li><li>小程序开发者工具</li></ul>]]></content>
     
     <summary type="html">
     
       &lt;p&gt;现在正在用的APP清单：&lt;br&gt;更新日期:&lt;/p&gt;
-&lt;p&gt;&lt;date&gt;Thu Oct 24 10:36:35 CST 2019&lt;/date&gt;&lt;br&gt;
+&lt;p&gt;&lt;date&gt;2019年10月24日 星期四 10时39分58秒 CST&lt;/date&gt;&lt;br&gt;
     
     </summary>
     
@@ -419,6 +391,54 @@
     <summary type="html">
     
       &lt;p&gt;Artifact - Intellij Idea 与软件工程中一个重要的概念，本文详细解释了Artifact在Intellij Idea 的存在形式与应用。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="linux" scheme="http://www.yilnz.com/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="http://www.yilnz.com/tags/linux/"/>
+    
+      <category term="openvpn" scheme="http://www.yilnz.com/tags/openvpn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Intelij Idea 使用 Tomcat 运行/调试 Web 应用 （超详细）</title>
+    <link href="http://www.yilnz.com/idea-tomcat/"/>
+    <id>http://www.yilnz.com/idea-tomcat/</id>
+    <published>2017-11-01T07:08:08.000Z</published>
+    <updated>2018-10-12T01:19:04.378Z</updated>
+    
+    <content type="html"><![CDATA[<p>工欲善其事必先利其器，本文拟用 Intellij Idea 来启动 Tomcat 运行/调试 Web 应用，深入 Idea 与 Tomcat 结合调试，减少项目部署时间。</p><a id="more"></a><h2 id="简单使用"><a href="#简单使用" class="headerlink" title="简单使用"></a>简单使用</h2><ol><li>Run Configuration -&gt; 新建 Tomcat Run Configuration</li></ol><p><img src="/images/idea/1.png" alt="image"></p><ol start="2"><li><p>选择当更新操作(Ctrl + F10)或者 Intellij Idea 失去焦点的时候更新Tomcat 中的 classes和资源（热交换）<br><img src="/images/idea/2.png" alt="image"></p></li><li><p>选择部署的artifact，这里选 war exploded, 为什么不选 war, 因为war是war exploded 打包后的， war exploded 不打包，而且 war 不支持 静态资源的热部署<br><img src="/images/idea/3.png" alt="image"></p></li></ol><ol start="2"><li>Run/Debug </li></ol><p><img src="/images/idea/4.png" alt="image"></p><h2 id="高级应用"><a href="#高级应用" class="headerlink" title="高级应用"></a>高级应用</h2><p>设置 Tomcat 配置的时候可以看到， On Update action 和 On frame deactivation， 这个是指什么，接下来会介绍。</p><h3 id="On-‘Update’-action"><a href="#On-‘Update’-action" class="headerlink" title="On ‘Update’ action"></a>On ‘Update’ action</h3><p>顾名思义，更新操作，是指 ‘Update application’， 快捷键为 Ctrl + F10 ，或者点击运行/调试 View左下角，与 Build Project/Module(Ctrl + F9) 不是同一个概念</p><p><img src="/images/idea/5.png" alt="image"></p><p>对于 exploded artifacts ， 可选的选项为</p><ul><li>Update Resources. 所有改变的资源都更新（CSS、HTML、JS等）</li><li>Update classes and resources. 所有改变的资源和改变的Java 类都重新编译更新  </li></ul><blockquote><p>在 Debug 模式下, 更新的类可以热交换(hot swapped). 在 Run 模式下, IntelliJ IDEA 只更新输出文件夹中的改变的类. 这个类实际上到底重载没有，取决于运行环境的兼容性。</p></blockquote><ul><li>Redeploy. 应用 artifact 重新构建和重新部署</li><li>Restart Server. 服务器重启，应用 artifact 重新构建和重新部署</li></ul><p>对于 packed artifacts （不带exploded的)，可选的选项为</p><ul><li>Hot swap classes. 改变的类重新编译和在运行时重加载. 只在 <strong>debug</strong> 模式下有用</li><li>Redeploy. 应用 artifact 重新构建和重新部署</li><li>Restart Server. 服务器重启，应用 artifact 重新构建和重新部署</li></ul><h2 id="On-frame-deactivation"><a href="#On-frame-deactivation" class="headerlink" title="On frame deactivation"></a>On frame deactivation</h2><p>这个名词的意思即 从Intellij idea 切换到其他程序，触发的操作。除了<br>Do nothing 选项，其他选项都跟 ‘On Update action’一致。</p><h2 id="Deploy-applications-configured-in-Tomcat-instance"><a href="#Deploy-applications-configured-in-Tomcat-instance" class="headerlink" title="Deploy applications configured in Tomcat instance"></a>Deploy applications configured in Tomcat instance</h2><p>勾选上这个选项，这样就会部署 tomcat 中的其他应用， 比如</p><ul><li>docs</li><li>examples</li><li>host-manager</li><li>manager</li><li>ROOT</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;工欲善其事必先利其器，本文拟用 Intellij Idea 来启动 Tomcat 运行/调试 Web 应用，深入 Idea 与 Tomcat 结合调试，减少项目部署时间。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="intellij idea" scheme="http://www.yilnz.com/categories/intellij-idea/"/>
+    
+    
+      <category term="intellij idea" scheme="http://www.yilnz.com/tags/intellij-idea/"/>
+    
+      <category term="java" scheme="http://www.yilnz.com/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu 搭建 OpenVPN 翻墙</title>
+    <link href="http://www.yilnz.com/openvpn/"/>
+    <id>http://www.yilnz.com/openvpn/</id>
+    <published>2017-10-31T06:43:38.000Z</published>
+    <updated>2018-10-12T01:19:04.378Z</updated>
+    
+    <content type="html"><![CDATA[<p>本文以 Ubuntu 为服务器搭建 OpenVPN 实现翻墙与外网客户端访问服务端内网。</p><a id="more"></a><h2 id="安装openvpn与easyrsa-（证书生成工具）-并启动"><a href="#安装openvpn与easyrsa-（证书生成工具）-并启动" class="headerlink" title="安装openvpn与easyrsa （证书生成工具） 并启动"></a>安装openvpn与easyrsa （证书生成工具） 并启动</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install openvpn easy-rsa</span><br></pre></td></tr></table></figure><p>首先把配置文件模板拷贝到/etc/openvpn/目录下，再解压</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo cp /usr/share/doc/openvpn/examples/sample-config-files/server.conf.gz /etc/openvpn/</span><br><span class="line">sudo gzip -d /etc/openvpn/server.conf.gz</span><br></pre></td></tr></table></figure><p>然后把easy-rsa拷贝到openvpn的配置目录下，方便操作<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir /etc/openvpn/easy-rsa/</span><br><span class="line">cp -r /usr/share/easy-rsa/* /etc/openvpn/easy-rsa/</span><br></pre></td></tr></table></figure></p><p>切换到easy-rsa目录，并且清除之前生成的keys(如果有)<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /etc/openvpn/easy-rsa/</span><br><span class="line">./clean-all</span><br><span class="line">./build-ca #生成ca证书</span><br></pre></td></tr></table></figure></p><p>生产服务器证书，这里有个坑，当询问到最后一步的时候一定要按y，不然会生成空的证书</p><blockquote><p>As in the previous step, most parameters can be defaulted. Two other queries require positive responses, “Sign the certificate? [y/n]” and “1 out of 1 certificate requests certified, commit? [y/n]”.</p></blockquote><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./build-key-server myservername</span><br></pre></td></tr></table></figure><p>生成Diffie Hellman 参数(可能有点慢):</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./build-dh</span><br></pre></td></tr></table></figure><p>现在所有的证书都在 <code>/etc/openvpn/easy-rsa/keys/</code> 里了，现在需要拷贝出来，拷贝到 openvpn 配置文件夹里面 (/etc/openvpn)</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd keys/</span><br><span class="line">cp myservername.crt myservername.key ca.crt dh2048.pem /etc/openvpn/</span><br></pre></td></tr></table></figure><p>最后，还需要生成一个秘钥 <code>ta.key</code></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openvpn --genkey --secret ta.key</span><br></pre></td></tr></table></figure><p>现在可以看到/etc/openvpn目录有的证书与秘钥如下：</p><p><code>myservername.crt myservername.key ca.crt dh2048.pem ta.key</code></p><p>现在开始修改openvpn配置文件，让配置文件对应刚刚拷贝过来的证书</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/openvpn/server.conf</span><br><span class="line"></span><br><span class="line">ca ca.crt</span><br><span class="line">cert myservername.crt</span><br><span class="line">key myservername.key</span><br><span class="line">dh dh2048.pem</span><br><span class="line">tls-auth ta.key 0</span><br></pre></td></tr></table></figure><p>现在服务器就配置完成了，启动试试<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start openvpn@server</span><br></pre></td></tr></table></figure></p><p>启动成功！<br>看看日志:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status openvpn@server</span><br></pre></td></tr></table></figure></p><p>或者<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">journal -u openvpn@server</span><br></pre></td></tr></table></figure></p><h2 id="制作客户端证书"><a href="#制作客户端证书" class="headerlink" title="制作客户端证书"></a>制作客户端证书</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /etc/openvpn/easy-rsa/</span><br><span class="line">./build-key client1</span><br></pre></td></tr></table></figure><p>然后把下列证书与秘钥传送到客户端所在机器</p><ol><li>/etc/openvpn/ca.crt</li><li>/etc/openvpn/easy-rsa/keys/client1.crt</li><li>/etc/openvpn/easy-rsa/keys/client1.key</li><li>/etc/openvpn/ta.key</li></ol><h2 id="Windows-客户端配置"><a href="#Windows-客户端配置" class="headerlink" title="Windows 客户端配置"></a>Windows 客户端配置</h2><p>1.先在官网下一份openvpn客户端，在安装目录找到sample-config文件夹，找到client.ovpn，拷贝到安装目录的config文件夹。</p><p>2.然后将服务器上制作的客户端证书与秘钥传送到config文件夹。</p><p>3.修改一下client.ovpn配置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ca ca.crt</span><br><span class="line">cert client1.crt</span><br><span class="line">key client1.key</span><br><span class="line">tls-auth ta.key 1</span><br></pre></td></tr></table></figure></p><p>4.找到系统托盘，连接！连接成功，现在ping 10.8.0.x （openvpn服务器的IP) 成功，<strong>但是现在还不能翻墙</strong>！</p><h2 id="OpenVpn-翻墙配置"><a href="#OpenVpn-翻墙配置" class="headerlink" title="OpenVpn 翻墙配置"></a>OpenVpn 翻墙配置</h2><p>首先需要配置Ubuntu支持流量转发，编辑 /etc/sysctl.conf<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">net.ipv4.ip_forward=1</span></span><br></pre></td></tr></table></figure></p><p>把注释去掉，然后重新加载<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo sysctl -p /etc/sysctl.conf</span><br></pre></td></tr></table></figure></p><p>修改openvpn配置 <code>/etc/openvpn/server.conf</code>，使其重定向客户端流量<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">push &quot;redirect-gateway def1 bypass-dhcp&quot;</span><br></pre></td></tr></table></figure></p><p>修改dns<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">push &quot;dhcp-option DNS 8.8.8.8&quot;</span><br></pre></td></tr></table></figure></p><p>重启openvpn<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart openvpn@server</span><br></pre></td></tr></table></figure></p><p>现在用客户端连上发现不能上网了，只能访问openvpn这台机器！是因为openvpn把客户端的所有流量都转发了，但是服务端并没有配置流量转发到外网。  </p><p>设置 iptables 转发10.8.0.x 的所有流量到外网:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -A POSTROUTING -s 10.8.0.0/24 -j MASQUERADE</span><br></pre></td></tr></table></figure></p><p>现在访问Google，OK！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文以 Ubuntu 为服务器搭建 OpenVPN 实现翻墙与外网客户端访问服务端内网。&lt;/p&gt;
     
     </summary>
     
